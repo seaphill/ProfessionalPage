@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — Sean Phillips, Ph.D.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0b0f1a;
+      --navy-mid: #111827;
+      --navy-light: #1a2236;
+      --slate: #8898b8;
+      --slate-light: #b4c2d8;
+      --accent: #4f87ff;
+      --accent-dim: #1e3a6e;
+      --white: #f4f6fb;
+      --white-dim: #d0d9ec;
+      --body-bg: #f0f2f7;
+      --text-primary: #0f1624;
+      --text-secondary: #4a5568;
+      --text-muted: #718096;
+      --border: rgba(255,255,255,0.08);
+      --border-light: rgba(0,0,0,0.07);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--body-bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(11,15,26,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      height: 60px;
+    }
+
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--white);
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 13px;
+      color: var(--slate-light);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--white); }
+    .nav-links a.active { color: var(--accent); }
+
+    /* PAGE HEADER */
+    .page-header {
+      background: var(--navy);
+      padding: 120px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-header::before {
+      content: '';
+      position: absolute;
+      top: -150px; right: -150px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(79,135,255,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .page-header-grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(79,135,255,0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(79,135,255,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 20px; height: 1px;
+      background: var(--accent);
+    }
+
+    .page-header h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-header p {
+      font-size: 15px;
+      color: var(--slate-light);
+      max-width: 540px;
+      line-height: 1.7;
+      position: relative;
+      z-index: 1;
+    }
+
+    .header-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 36px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .header-stat {
+      text-align: left;
+    }
+
+    .header-stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+    }
+    .header-stat-num span { color: var(--accent); }
+
+    .header-stat-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--slate);
+      margin-top: 4px;
+    }
+
+    /* MAIN CONTENT */
+    .pub-page {
+      padding: 48px 0 96px;
+    }
+
+    /* CONTROLS BAR */
+    .controls-bar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .filter-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .filter-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      min-width: 48px;
+    }
+
+    .filter-btn {
+      font-size: 12px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 100px;
+      border: 1px solid var(--border-light);
+      background: #fff;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: 'DM Sans', sans-serif;
+      white-space: nowrap;
+    }
+    .filter-btn:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+    .filter-btn.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+    .filter-btn.accent-active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    /* SEARCH */
+    .search-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .search-input {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      padding: 9px 14px 9px 36px;
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--text-primary);
+      outline: none;
+      width: 240px;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(79,135,255,0.1);
+    }
+    .search-input::placeholder { color: var(--text-muted); }
+
+    .search-icon {
+      position: absolute;
+      left: 11px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px; height: 15px;
+      stroke: var(--text-muted);
+      fill: none;
+      pointer-events: none;
+    }
+
+    /* RESULTS COUNT */
+    .results-meta {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sort-select {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px;
+      color: var(--text-secondary);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 5px 10px;
+      background: #fff;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* PUBLICATION LIST */
+    .pub-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pub-item {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .pub-item:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      transform: translateY(-1px);
+    }
+
+    .pub-main {
+      display: grid;
+      grid-template-columns: 72px 1fr auto;
+      gap: 0;
+      padding: 20px 24px;
+      cursor: pointer;
+    }
+
+    .pub-year-col {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 3px;
+      padding-right: 12px;
+    }
+
+    .pub-year {
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .pub-type-badge {
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 3px 7px;
+      border-radius: 4px;
+      margin-top: 6px;
+      white-space: nowrap;
+    }
+    .badge-journal    { background: rgba(79,135,255,0.12); color: #3b72e8; }
+    .badge-conference { background: rgba(16,185,129,0.12); color: #059669; }
+    .badge-book_chapter { background: rgba(139,92,246,0.12); color: #7c3aed; }
+    .badge-thesis     { background: rgba(107,114,128,0.12); color: #4b5563; }
+
+    .pub-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .pub-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+
+    .pub-authors {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+
+    .pub-authors strong {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    .pub-venue {
+      font-size: 12px;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .pub-venue-meta {
+      font-style: normal;
+      color: var(--text-muted);
+    }
+
+    .pub-links {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .pub-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      padding: 4px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      border: 1px solid;
+      transition: all 0.15s;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .link-pdf    { color: #dc2626; border-color: rgba(220,38,38,0.25); background: rgba(220,38,38,0.05); }
+    .link-pdf:hover { background: rgba(220,38,38,0.12); }
+
+    .link-doi    { color: #2563eb; border-color: rgba(37,99,235,0.25); background: rgba(37,99,235,0.05); }
+    .link-doi:hover { background: rgba(37,99,235,0.12); }
+
+    .link-arxiv  { color: #b45309; border-color: rgba(180,83,9,0.25); background: rgba(180,83,9,0.05); }
+    .link-arxiv:hover { background: rgba(180,83,9,0.12); }
+
+    .link-cite   { color: var(--text-secondary); border-color: var(--border-light); background: transparent; }
+    .link-cite:hover { background: var(--body-bg); }
+
+    .link-abstract { color: var(--accent); border-color: rgba(79,135,255,0.25); background: rgba(79,135,255,0.05); }
+    .link-abstract:hover { background: rgba(79,135,255,0.12); }
+
+    .cite-count {
+      font-size: 11px;
+      color: var(--text-muted);
+      padding: 4px 8px;
+      background: var(--body-bg);
+      border-radius: 5px;
+      border: 1px solid var(--border-light);
+    }
+
+    .pub-expand-icon {
+      display: flex;
+      align-items: flex-start;
+      padding-top: 4px;
+      padding-left: 16px;
+      color: var(--text-muted);
+      transition: transform 0.2s;
+      flex-shrink: 0;
+    }
+
+    .pub-expand-icon svg {
+      width: 16px; height: 16px;
+      stroke: currentColor;
+      fill: none;
+      transition: transform 0.2s;
+    }
+
+    .pub-item.expanded .pub-expand-icon svg {
+      transform: rotate(180deg);
+    }
+
+    /* ABSTRACT / EXPANDED PANEL */
+    .pub-panel {
+      display: none;
+      padding: 0 24px 20px 96px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .pub-item.expanded .pub-panel {
+      display: block;
+    }
+
+    .pub-abstract {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+
+    .pub-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
+    }
+
+    .kw-tag {
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 100px;
+      background: var(--body-bg);
+      border: 1px solid var(--border-light);
+      color: var(--text-muted);
+    }
+
+    /* BIBTEX MODAL */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .modal-overlay.open { display: flex; }
+
+    .modal {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px;
+      max-width: 640px;
+      width: 100%;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+    .modal-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+
+    .modal-bibtex {
+      background: var(--navy);
+      color: #a8b8d8;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      line-height: 1.7;
+      padding: 16px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      word-break: break-all;
+      max-height: 300px;
+      overflow-y: auto;
+      margin-bottom: 16px;
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    .btn-copy {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 9px 20px;
+      border-radius: 7px;
+      border: none;
+      background: var(--navy);
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-copy:hover { background: var(--accent); }
+    .btn-copy.copied { background: #10b981; }
+
+    .btn-close-modal {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      padding: 9px 20px;
+      border-radius: 7px;
+      border: 1px solid var(--border-light);
+      background: transparent;
+      color: var(--text-secondary);
+      cursor: pointer;
+    }
+
+    .modal-close-x {
+      position: absolute;
+      top: 16px; right: 16px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-muted);
+      font-size: 20px;
+      line-height: 1;
+      padding: 4px;
+    }
+
+    /* EMPTY STATE */
+    .empty-state {
+      text-align: center;
+      padding: 64px 24px;
+      color: var(--text-muted);
+    }
+    .empty-state svg { width: 40px; height: 40px; stroke: var(--border-light); fill: none; margin: 0 auto 12px; display: block; }
+    .empty-state p { font-size: 14px; }
+
+    /* SECTION DIVIDERS (by type) */
+    .section-divider {
+      font-family: 'Syne', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding: 8px 0 10px;
+      margin-top: 8px;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-divider span {
+      background: var(--body-bg);
+      padding-right: 8px;
+    }
+    .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border-light);
+      display: none;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      border-top: 1px solid var(--border);
+      padding: 32px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-logo { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; color: var(--slate); }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 12px; color: var(--slate); text-decoration: none; transition: color 0.15s; }
+    .footer-links a:hover { color: var(--white); }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .container { padding: 0 20px; }
+      .pub-main { grid-template-columns: 56px 1fr; }
+      .pub-expand-icon { display: none; }
+      .pub-panel { padding-left: 56px; }
+      .controls-bar { flex-direction: column; }
+      .search-input { width: 100%; }
+      footer { flex-direction: column; gap: 16px; text-align: center; }
+      .header-stats { gap: 24px; flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Sean <span>Phillips</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#research">Research</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
+      <li><a href="index.html#awards">Awards</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="#" style="color:var(--accent)">CV ↗</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-header-grid"></div>
+    <div class="container">
+      <div class="section-label" style="color:var(--accent)">Research Output</div>
+      <h1>Publications</h1>
+      <p>Journal articles, conference papers, book chapters, and theses spanning hybrid systems, networked control, and aerospace applications.</p>
+      <div class="header-stats">
+        <div class="header-stat">
+          <div class="header-stat-num" id="stat-total">—</div>
+          <div class="header-stat-label">Total Works</div>
+        </div>
+        <div class="header-stat">
+          <div class="header-stat-num" id="stat-journals">—</div>
+          <div class="header-stat-label">Journal Articles</div>
+        </div>
+        <div class="header-stat">
+          <div class="header-stat-num" id="stat-conferences">—</div>
+          <div class="header-stat-label">Conference Papers</div>
+        </div>
+        <div class="header-stat">
+          <div class="header-stat-num" id="stat-years">—</div>
+          <div class="header-stat-label">Years Active</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="pub-page">
+    <div class="container">
+
+      <!-- CONTROLS -->
+      <div class="controls-bar">
+        <div class="filter-group">
+          <div class="filter-row">
+            <span class="filter-label">Type</span>
+            <button class="filter-btn active" data-type="all">All</button>
+            <button class="filter-btn" data-type="journal">Journal</button>
+            <button class="filter-btn" data-type="conference">Conference</button>
+            <button class="filter-btn" data-type="book_chapter">Book Chapter</button>
+            <button class="filter-btn" data-type="thesis">Thesis</button>
+          </div>
+          <div class="filter-row" id="year-filters">
+            <span class="filter-label">Year</span>
+            <!-- populated by JS -->
+          </div>
+        </div>
+        <div class="search-wrap">
+          <svg class="search-icon" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <input type="text" class="search-input" id="search-input" placeholder="Search title, author, keyword…">
+        </div>
+      </div>
+
+      <!-- RESULTS META -->
+      <div class="results-meta">
+        <span id="results-count"></span>
+        <select class="sort-select" id="sort-select">
+          <option value="year-desc">Newest first</option>
+          <option value="year-asc">Oldest first</option>
+          <option value="title-asc">Title A–Z</option>
+        </select>
+      </div>
+
+      <!-- PUB LIST -->
+      <div class="pub-list" id="pub-list">
+        <div class="empty-state">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <p>Loading publications…</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- BIBTEX MODAL -->
+  <div class="modal-overlay" id="cite-modal">
+    <div class="modal">
+      <button class="modal-close-x" id="modal-close-x" aria-label="Close">×</button>
+      <div class="modal-title" id="modal-pub-title">BibTeX Citation</div>
+      <pre class="modal-bibtex" id="modal-bibtex-content"></pre>
+      <div class="modal-actions">
+        <button class="btn-close-modal" id="modal-close-btn">Close</button>
+        <button class="btn-copy" id="modal-copy-btn">Copy to Clipboard</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Sean Phillips, Ph.D.</div>
+    <div class="footer-links">
+      <a href="https://scholar.google.com/citations?user=n94W3HUAAAAJ" target="_blank">Google Scholar ↗</a>
+      <a href="#">CV ↗</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    // ─── STATE ───────────────────────────────────────────────────────────────
+    let allPubs = [];
+    let activeType = 'all';
+    let activeYear = 'all';
+    let searchQuery = '';
+    let sortMode = 'year-desc';
+
+    // ─── LOAD DATA ────────────────────────────────────────────────────────────
+    async function loadPubs() {
+      try {
+        const res = await fetch('publications.json');
+        if (!res.ok) throw new Error('Failed to load');
+        allPubs = await res.json();
+        init();
+      } catch (e) {
+        document.getElementById('pub-list').innerHTML =
+          `<div class="empty-state"><p>Could not load publications.json. Make sure it's in the same folder as this file.</p></div>`;
+      }
+    }
+
+    // ─── INIT ─────────────────────────────────────────────────────────────────
+    function init() {
+      buildYearFilters();
+      updateStats();
+      render();
+      bindEvents();
+    }
+
+    // ─── BUILD YEAR FILTERS ───────────────────────────────────────────────────
+    function buildYearFilters() {
+      const years = [...new Set(allPubs.map(p => p.year))].sort((a,b) => b - a);
+      const row = document.getElementById('year-filters');
+      const allBtn = document.createElement('button');
+      allBtn.className = 'filter-btn active';
+      allBtn.dataset.year = 'all';
+      allBtn.textContent = 'All years';
+      row.appendChild(allBtn);
+      years.forEach(y => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn';
+        btn.dataset.year = String(y);
+        btn.textContent = y;
+        row.appendChild(btn);
+      });
+    }
+
+    // ─── STATS ────────────────────────────────────────────────────────────────
+    function updateStats() {
+      const journals = allPubs.filter(p => p.type === 'journal').length;
+      const conferences = allPubs.filter(p => p.type === 'conference').length;
+      const years = [...new Set(allPubs.map(p => p.year))];
+      const span = Math.max(...years) - Math.min(...years) + 1;
+      document.getElementById('stat-total').textContent = allPubs.length + '+';
+      document.getElementById('stat-journals').textContent = journals;
+      document.getElementById('stat-conferences').textContent = conferences;
+      document.getElementById('stat-years').textContent = span;
+    }
+
+    // ─── FILTER + SORT ────────────────────────────────────────────────────────
+    function getFiltered() {
+      let pubs = allPubs.filter(p => {
+        const matchType = activeType === 'all' || p.type === activeType;
+        const matchYear = activeYear === 'all' || String(p.year) === activeYear;
+        const q = searchQuery.toLowerCase();
+        const matchSearch = !q ||
+          p.title.toLowerCase().includes(q) ||
+          p.authors.some(a => a.toLowerCase().includes(q)) ||
+          (p.keywords || []).some(k => k.toLowerCase().includes(q)) ||
+          (p.abstract || '').toLowerCase().includes(q) ||
+          (p.venue || '').toLowerCase().includes(q);
+        return matchType && matchYear && matchSearch;
+      });
+
+      if (sortMode === 'year-desc') pubs.sort((a,b) => b.year - a.year || a.title.localeCompare(b.title));
+      else if (sortMode === 'year-asc') pubs.sort((a,b) => a.year - b.year || a.title.localeCompare(b.title));
+      else if (sortMode === 'title-asc') pubs.sort((a,b) => a.title.localeCompare(b.title));
+
+      return pubs;
+    }
+
+    // ─── RENDER ───────────────────────────────────────────────────────────────
+    function render() {
+      const pubs = getFiltered();
+      const list = document.getElementById('pub-list');
+
+      document.getElementById('results-count').textContent =
+        pubs.length === allPubs.length
+          ? `${pubs.length} publications`
+          : `${pubs.length} of ${allPubs.length} publications`;
+
+      if (pubs.length === 0) {
+        list.innerHTML = `<div class="empty-state">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <p>No publications match your filters.</p>
+        </div>`;
+        return;
+      }
+
+      // Group by type when showing all, otherwise flat list
+      let html = '';
+      if (activeType === 'all' && !searchQuery) {
+        const order = ['journal','conference','book_chapter','thesis'];
+        const labels = { journal: 'Journal Articles', conference: 'Conference Papers', book_chapter: 'Book Chapters', thesis: 'Theses & Dissertations' };
+        order.forEach(type => {
+          const group = pubs.filter(p => p.type === type);
+          if (group.length === 0) return;
+          html += `<div class="section-divider"><span>${labels[type]} (${group.length})</span></div>`;
+          group.forEach(p => { html += renderPub(p); });
+        });
+      } else {
+        pubs.forEach(p => { html += renderPub(p); });
+      }
+
+      list.innerHTML = html;
+
+      // Bind expand toggles
+      list.querySelectorAll('.pub-main').forEach(el => {
+        el.addEventListener('click', (e) => {
+          if (e.target.closest('.pub-link')) return;
+          const item = el.closest('.pub-item');
+          item.classList.toggle('expanded');
+        });
+      });
+
+      // Bind cite buttons
+      list.querySelectorAll('.cite-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openCiteModal(btn.dataset.bibtex, btn.dataset.title);
+        });
+      });
+    }
+
+    // ─── RENDER ONE PUB ───────────────────────────────────────────────────────
+    function renderPub(p) {
+      const badgeClass = `badge-${p.type}`;
+      const badgeLabels = { journal: 'Journal', conference: 'Conference', book_chapter: 'Book Chapter', thesis: 'Thesis' };
+
+      // Authors — bold S. Phillips
+      const authorsHtml = p.authors.map(a =>
+        a.includes('Phillips') ? `<strong>${a}</strong>` : a
+      ).join(', ');
+
+      // Venue meta (volume, issue, pages, location)
+      let venueMeta = '';
+      if (p.volume) venueMeta += ` ${p.volume}`;
+      if (p.issue)  venueMeta += `(${p.issue})`;
+      if (p.pages)  venueMeta += `:${p.pages}`;
+      if (p.location) venueMeta += ` · ${p.location}`;
+      if (p.month)  venueMeta += `, ${p.month} ${p.year}`;
+      else          venueMeta += `, ${p.year}`;
+
+      // Links
+      let links = '';
+      if (p.pdf)    links += `<a class="pub-link link-pdf" href="${p.pdf}" target="_blank" rel="noopener">PDF ↗</a>`;
+      if (p.doi)    links += `<a class="pub-link link-doi" href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI ↗</a>`;
+      if (p.arxiv)  links += `<a class="pub-link link-arxiv" href="${p.arxiv}" target="_blank" rel="noopener">arXiv ↗</a>`;
+      if (p.bibtex) links += `<button class="pub-link link-cite cite-btn" data-bibtex="${escHtml(p.bibtex)}" data-title="${escHtml(p.title)}">Cite</button>`;
+      if (p.citation_count !== null && p.citation_count !== undefined) {
+        links += `<span class="cite-count">cited ${p.citation_count}×</span>`;
+      }
+
+      // Abstract + keywords for expanded panel
+      let panelContent = '';
+      if (p.abstract) {
+        panelContent += `<p class="pub-abstract">${escHtml(p.abstract)}</p>`;
+      }
+      if (p.keywords && p.keywords.length) {
+        panelContent += `<div class="pub-keywords">${p.keywords.map(k => `<span class="kw-tag">${escHtml(k)}</span>`).join('')}</div>`;
+      }
+      const hasPanel = p.abstract || (p.keywords && p.keywords.length > 0);
+
+      return `
+      <div class="pub-item" data-id="${p.id}">
+        <div class="pub-main">
+          <div class="pub-year-col">
+            <span class="pub-year">${p.year}</span>
+            <span class="pub-type-badge ${badgeClass}">${badgeLabels[p.type] || p.type}</span>
+          </div>
+          <div class="pub-body">
+            <div class="pub-title">${escHtml(p.title)}</div>
+            <div class="pub-authors">${authorsHtml}</div>
+            <div class="pub-venue"><em>${escHtml(p.venue)}</em><span class="pub-venue-meta">${venueMeta}</span></div>
+            <div class="pub-links">${links}</div>
+          </div>
+          ${hasPanel ? `<div class="pub-expand-icon">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>` : ''}
+        </div>
+        ${hasPanel ? `<div class="pub-panel">${panelContent}</div>` : ''}
+      </div>`;
+    }
+
+    // ─── ESCAPE HTML ─────────────────────────────────────────────────────────
+    function escHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g,'&amp;')
+        .replace(/</g,'&lt;')
+        .replace(/>/g,'&gt;')
+        .replace(/"/g,'&quot;');
+    }
+
+    // ─── CITE MODAL ───────────────────────────────────────────────────────────
+    function openCiteModal(bibtex, title) {
+      document.getElementById('modal-pub-title').textContent = title;
+      document.getElementById('modal-bibtex-content').textContent = bibtex.replace(/\\n/g, '\n');
+      document.getElementById('cite-modal').classList.add('open');
+      document.getElementById('modal-copy-btn').textContent = 'Copy to Clipboard';
+      document.getElementById('modal-copy-btn').classList.remove('copied');
+    }
+
+    function closeCiteModal() {
+      document.getElementById('cite-modal').classList.remove('open');
+    }
+
+    // ─── EVENT BINDINGS ───────────────────────────────────────────────────────
+    function bindEvents() {
+      // Type filters
+      document.querySelectorAll('[data-type]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('[data-type]').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeType = btn.dataset.type;
+          render();
+        });
+      });
+
+      // Year filters (delegated — built dynamically)
+      document.getElementById('year-filters').addEventListener('click', e => {
+        const btn = e.target.closest('[data-year]');
+        if (!btn) return;
+        document.querySelectorAll('[data-year]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeYear = btn.dataset.year;
+        render();
+      });
+
+      // Search
+      let searchTimer;
+      document.getElementById('search-input').addEventListener('input', e => {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(() => {
+          searchQuery = e.target.value.trim();
+          render();
+        }, 200);
+      });
+
+      // Sort
+      document.getElementById('sort-select').addEventListener('change', e => {
+        sortMode = e.target.value;
+        render();
+      });
+
+      // Modal
+      document.getElementById('modal-close-btn').addEventListener('click', closeCiteModal);
+      document.getElementById('modal-close-x').addEventListener('click', closeCiteModal);
+      document.getElementById('cite-modal').addEventListener('click', e => {
+        if (e.target === e.currentTarget) closeCiteModal();
+      });
+
+      document.getElementById('modal-copy-btn').addEventListener('click', () => {
+        const text = document.getElementById('modal-bibtex-content').textContent;
+        navigator.clipboard.writeText(text).then(() => {
+          const btn = document.getElementById('modal-copy-btn');
+          btn.textContent = 'Copied!';
+          btn.classList.add('copied');
+          setTimeout(() => {
+            btn.textContent = 'Copy to Clipboard';
+            btn.classList.remove('copied');
+          }, 2000);
+        });
+      });
+
+      // Keyboard close
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeCiteModal();
+      });
+    }
+
+    // ─── BOOT ─────────────────────────────────────────────────────────────────
+    loadPubs();
+  </script>
+
+</body>
+</html>
