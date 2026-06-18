@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching — Sean Phillips, Ph.D.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0b0f1a;
+      --navy-mid: #111827;
+      --navy-light: #1a2236;
+      --slate: #8898b8;
+      --slate-light: #b4c2d8;
+      --accent: #4f87ff;
+      --accent-dim: #1e3a6e;
+      --white: #f4f6fb;
+      --white-dim: #d0d9ec;
+      --body-bg: #f0f2f7;
+      --text-primary: #0f1624;
+      --text-secondary: #4a5568;
+      --text-muted: #718096;
+      --border: rgba(255,255,255,0.08);
+      --border-light: rgba(0,0,0,0.07);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--body-bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(11,15,26,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      height: 60px;
+    }
+
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--white);
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--slate-light);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--white); }
+    .nav-links a.active { color: var(--accent); }
+
+    /* PAGE HEADER */
+    .page-header {
+      background: var(--navy);
+      padding: 120px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-header::before {
+      content: '';
+      position: absolute;
+      top: -150px; right: -150px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(79,135,255,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .page-header-grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(79,135,255,0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(79,135,255,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 20px; height: 1px;
+      background: var(--accent);
+    }
+
+    .page-header h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-header p {
+      font-size: 15px;
+      color: var(--slate-light);
+      max-width: 540px;
+      line-height: 1.7;
+      position: relative;
+      z-index: 1;
+    }
+
+    .header-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 36px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .header-stat { text-align: left; }
+
+    .header-stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+    }
+    .header-stat-num span { color: var(--accent); }
+
+    .header-stat-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--slate);
+      margin-top: 4px;
+    }
+
+    /* MAIN */
+    .teach-page { padding: 64px 0 96px; }
+
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(24px, 3vw, 32px);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.2;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-intro {
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin-bottom: 32px;
+    }
+
+    .teach-section { margin-bottom: 72px; }
+    .teach-section:last-child { margin-bottom: 0; }
+
+    /* COURSE CARDS */
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .course-card {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 28px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .course-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    }
+
+    .course-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .course-code {
+      font-family: 'Syne', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+
+    .course-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.35;
+    }
+
+    .course-term {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 100px;
+      background: rgba(79,135,255,0.1);
+      color: var(--accent);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .course-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 18px;
+      flex: 1;
+    }
+
+    .course-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .course-tag {
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 100px;
+      background: var(--body-bg);
+      border: 1px solid var(--border-light);
+      color: var(--text-muted);
+    }
+
+    .course-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--border-light);
+      padding-top: 16px;
+    }
+
+    .course-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid rgba(79,135,255,0.25);
+      background: rgba(79,135,255,0.05);
+      transition: background 0.15s;
+    }
+    .course-link:hover { background: rgba(79,135,255,0.12); }
+
+    .course-link.disabled {
+      color: var(--text-muted);
+      border-color: var(--border-light);
+      background: transparent;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    /* GUEST LECTURES / WORKSHOPS LIST */
+    .activity-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .activity-item {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .activity-item:last-child { border-bottom: none; }
+
+    .activity-date {
+      font-family: 'Syne', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      padding-top: 2px;
+    }
+
+    .activity-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+      line-height: 1.45;
+    }
+
+    .activity-venue {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+    }
+
+    .activity-type {
+      display: inline-block;
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+    .type-guest    { background: rgba(124,58,237,0.1); color: #7c3aed; }
+    .type-workshop { background: rgba(16,185,129,0.1); color: #059669; }
+    .type-short    { background: rgba(180,83,9,0.1); color: #b45309; }
+
+    /* TEACHING PHILOSOPHY CALLOUT */
+    .philosophy-callout {
+      background: var(--navy);
+      border-radius: 14px;
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .philosophy-callout::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 320px; height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(79,135,255,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .philosophy-callout h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+    .philosophy-callout p {
+      font-size: 14px;
+      color: var(--slate-light);
+      line-height: 1.8;
+      max-width: 680px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      border-top: 1px solid var(--border);
+      padding: 32px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-logo { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; color: var(--slate); }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 12px; color: var(--slate); text-decoration: none; transition: color 0.15s; }
+    .footer-links a:hover { color: var(--white); }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .container { padding: 0 20px; }
+      .header-stats { gap: 24px; flex-wrap: wrap; }
+      .activity-item { grid-template-columns: 1fr; gap: 4px; }
+      .activity-date { padding-top: 0; }
+      .philosophy-callout { padding: 28px; }
+      footer { flex-direction: column; gap: 16px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Sean <span>Phillips</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#research">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html" class="active">Teaching</a></li>
+      <li><a href="index.html#awards">Awards</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="#" style="color:var(--accent)">CV ↗</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-header-grid"></div>
+    <div class="container">
+      <div class="section-label" style="color:var(--accent)">Education &amp; Outreach</div>
+      <h1>Teaching</h1>
+      <p>Courses, guest lectures, and workshops in control systems, dynamics, and aerospace applications — bridging classroom theory with real research problems in hybrid systems and autonomy.</p>
+      <div class="header-stats">
+        <div class="header-stat">
+          <div class="header-stat-num" id="stat-courses">—</div>
+          <div class="header-stat-label">Courses Taught</div>
+        </div>
+        <div class="header-stat">
+          <div class="header-stat-num" id="stat-activities">—</div>
+          <div class="header-stat-label">Guest Lectures &amp; Workshops</div>
+        </div>
+        <div class="header-stat">
+          <div class="header-stat-num">UNM</div>
+          <div class="header-stat-label">Department of ECE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="teach-page">
+    <div class="container">
+
+      <!-- COURSES -->
+      <div class="teach-section">
+        <div class="section-label">Courses</div>
+        <h2>University Courses</h2>
+        <p class="section-intro">Graduate and undergraduate courses taught in the Department of Electrical &amp; Computer Engineering at the University of New Mexico.</p>
+
+        <div class="course-grid" id="course-grid">
+
+          <div class="course-card">
+            <div class="course-card-top">
+              <div>
+                <div class="course-code">ECE 446</div>
+                <div class="course-title">Control Systems</div>
+              </div>
+              <span class="course-term">Fall 2024</span>
+            </div>
+            <p class="course-desc">
+              Introduction to classical and modern control theory, covering system modeling, stability analysis, and feedback controller design. Topics include transfer functions, state-space representation, root locus, frequency response, and PID control with applications to engineering systems.
+            </p>
+            <div class="course-meta">
+              <span class="course-tag">Undergraduate</span>
+              <span class="course-tag">Control Theory</span>
+              <span class="course-tag">State-Space Methods</span>
+            </div>
+            <div class="course-links">
+              <a href="#" class="course-link">Syllabus ↗</a>
+              <a href="#" class="course-link disabled">Materials (coming soon)</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-card-top">
+              <div>
+                <div class="course-code">ME 496</div>
+                <div class="course-title">Special Topics — Aerospace Systems &amp; Autonomy</div>
+              </div>
+              <span class="course-term">Spring 2025</span>
+            </div>
+            <p class="course-desc">
+              Special topics course covering autonomous and hybrid dynamical systems with applications to aerospace and space vehicles. Includes coverage of guidance, navigation, and control (GN&amp;C) fundamentals, multi-agent coordination, and an introduction to spacecraft rendezvous and proximity operations.
+            </p>
+            <div class="course-meta">
+              <span class="course-tag">Graduate</span>
+              <span class="course-tag">Hybrid Systems</span>
+              <span class="course-tag">Spacecraft GN&amp;C</span>
+              <span class="course-tag">Autonomy</span>
+            </div>
+            <div class="course-links">
+              <a href="#" class="course-link">Syllabus ↗</a>
+              <a href="#" class="course-link disabled">Materials (coming soon)</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- GUEST LECTURES, WORKSHOPS, SHORT COURSES -->
+      <div class="teach-section">
+        <div class="section-label">Outreach</div>
+        <h2>Guest Lectures, Workshops &amp; Short Courses</h2>
+        <p class="section-intro">Invited talks and short-format instruction delivered to academic, government, and professional audiences.</p>
+
+        <div class="activity-list" id="activity-list">
+
+          <div class="activity-item">
+            <div class="activity-date">2024</div>
+            <div>
+              <span class="activity-type type-guest">Guest Lecture</span>
+              <div class="activity-title">Hybrid Systems Modeling for Aerospace Applications</div>
+              <div class="activity-venue">University of New Mexico — Department of Electrical &amp; Computer Engineering</div>
+            </div>
+          </div>
+
+          <div class="activity-item">
+            <div class="activity-date">2023</div>
+            <div>
+              <span class="activity-type type-workshop">Workshop</span>
+              <div class="activity-title">Introduction to Spacecraft Rendezvous and Proximity Operations</div>
+              <div class="activity-venue">AFRL Space Vehicles Directorate — Early Career Researcher Workshop</div>
+            </div>
+          </div>
+
+          <div class="activity-item">
+            <div class="activity-date">2022</div>
+            <div>
+              <span class="activity-type type-short">Short Course</span>
+              <div class="activity-title">Fundamentals of Multi-Agent Coordination and Control</div>
+              <div class="activity-venue">AAS Rocky Mountain GN&amp;C Conference — Pre-Conference Short Course</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TEACHING PHILOSOPHY -->
+      <div class="teach-section">
+        <div class="philosophy-callout">
+          <h3>Teaching Philosophy</h3>
+          <p>
+            I aim to connect classroom theory directly to open research problems — students leave my courses having implemented the same modeling and control techniques used in current spacecraft autonomy research. Coursework emphasizes hands-on simulation, intuition-building through hybrid systems examples, and exposure to real aerospace case studies drawn from ongoing work at AFRL and UNM.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Sean Phillips, Ph.D.</div>
+    <div class="footer-links">
+      <a href="https://scholar.google.com/citations?user=n94W3HUAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+      <a href="#">CV ↗</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    // Update header stat counts based on rendered content
+    document.getElementById('stat-courses').textContent =
+      document.querySelectorAll('#course-grid .course-card').length;
+    document.getElementById('stat-activities').textContent =
+      document.querySelectorAll('#activity-list .activity-item').length + '+';
+  </script>
+
+</body>
+</html>
