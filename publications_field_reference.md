@@ -50,6 +50,7 @@ publications.json as your reference when adding new entries.
 - **Allowed values:**
   - `"journal"` — blue badge
   - `"conference"` — green badge
+  - `"preprint"` — amber badge
   - `"book_chapter"` — purple badge
   - `"thesis"` — gray badge
 - **Example:** `"conference"`

@@ -1,9 +1,1213 @@
 [
     {
+        "id": "journal-tnse-2026-curvature",
+        "type": "journal",
+        "title": "Curvature on Graphs With Negative Edge Weights",
+        "authors": [
+            "D. Grange",
+            "Y. Sun",
+            "C. Weistuch",
+            "R. Elkin",
+            "S. Phillips",
+            "J. O. Deasy"
+        ],
+        "year": 2026,
+        "venue": "IEEE Transactions on Network Science and Engineering",
+        "volume": "13",
+        "issue": "",
+        "pages": "9205-9222",
+        "month": "",
+        "location": "",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "graph theory",
+            "curvature",
+            "network science"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "journal-jgcd-2025-rpo-safety-under-review",
+        "type": "journal",
+        "title": "Rapid Passive Safety Analysis Applied to RPO Mission Planning and Runtime Assurance",
+        "authors": [
+            "Kealy A. Murphy",
+            "M. R. Mercier",
+            "David H. Curtis",
+            "S. A. Phillips"
+        ],
+        "year": 2025,
+        "venue": "AIAA Journal of Guidance, Control, and Dynamics (under review)",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "rendezvous",
+            "proximity operations",
+            "runtime assurance",
+            "safety analysis"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "journal-nahs-2026-saver-tubes-under-review",
+        "type": "journal",
+        "title": "SAVER-Tubes: SAmpling-Based VERification of Black-Box Systems With Stochastic Reach Tubes",
+        "authors": [
+            "V. Sivaramakrishnan",
+            "R. Devonport",
+            "J. Y. Pilipovsky",
+            "K. C. Kalagarla",
+            "P. Tsiotras",
+            "M. M. K. Oishi",
+            "S. A. Phillips"
+        ],
+        "year": 2026,
+        "venue": "Nonlinear Analysis: Hybrid Systems (under review)",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "verification",
+            "reachability analysis",
+            "stochastic systems"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "journal-tcns-2026-omniscience-under-review",
+        "type": "journal",
+        "title": "Necessary and Sufficient Conditions for State Omniscience of Linear Time-Invariant Distributed Estimators",
+        "authors": [
+            "C. W. Hays",
+            "S. A. Phillips"
+        ],
+        "year": 2026,
+        "venue": "IEEE Transactions on Control of Network Systems (under development)",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "distributed estimation",
+            "observability",
+            "state omniscience"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "journal-csl-2023-transport",
+        "type": "journal",
+        "title": "Computational Optimal Transport and Filtering on Riemannian Manifolds",
+        "authors": [
+            "D. Grange",
+            "M. Al-Jarrah",
+            "R. Baptista",
+            "A. Taghvaei",
+            "T. T. Georgiou",
+            "S. Phillips",
+            "A. Tannenbaum"
+        ],
+        "year": 2023,
+        "venue": "IEEE Control Systems Letters",
+        "volume": "7",
+        "issue": "",
+        "pages": "3495-3500",
+        "month": "",
+        "location": "",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "optimal transport",
+            "filtering",
+            "riemannian manifolds"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "journal-jgcd-2023-underactuated-hybrid",
+        "type": "journal",
+        "title": "Hybrid Systems Approach to Autonomous Rendezvous and Docking of an Underactuated Satellite",
+        "authors": [
+            "A. Soderlund",
+            "S. Phillips"
+        ],
+        "year": 2023,
+        "venue": "AIAA Journal of Guidance, Control, and Dynamics",
+        "volume": "46",
+        "issue": "10",
+        "pages": "1901-1918",
+        "month": "",
+        "location": "",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "2023 AFRL/RV Publication of the Year Team Award.",
+        "keywords": [
+            "hybrid systems",
+            "rendezvous",
+            "docking",
+            "underactuated satellite"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "journal-jsr-2024-dqn-inspection",
+        "type": "journal",
+        "title": "Deep Q-Learning for Decentralized Multi-Agent Inspection of a Tumbling Target",
+        "authors": [
+            "J. Aurand",
+            "S. Cutlip",
+            "H. Lei",
+            "K. Lang",
+            "S. Phillips"
+        ],
+        "year": 2024,
+        "venue": "AIAA Journal of Spacecraft and Robotics",
+        "volume": "61",
+        "issue": "2",
+        "pages": "",
+        "month": "",
+        "location": "",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "reinforcement learning",
+            "multi-agent inspection",
+            "tumbling target"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "journal-tcst-2024-run-time-assurance",
+        "type": "journal",
+        "title": "Run Time Assurance for Spacecraft Attitude Control Under Nondeterministic Assumptions",
+        "authors": [
+            "M. Abate",
+            "M. Mote",
+            "M. Dor",
+            "C. Klett",
+            "S. Phillips",
+            "K. Lang",
+            "P. Tsiotras",
+            "E. Feron",
+            "S. Coogan"
+        ],
+        "year": 2024,
+        "venue": "IEEE Transactions on Control Systems Technology",
+        "volume": "32",
+        "issue": "3",
+        "pages": "862-873",
+        "month": "",
+        "location": "",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "runtime assurance",
+            "attitude control",
+            "spacecraft"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "journal-jgcd-2024-angles-only-catalog",
+        "type": "journal",
+        "title": "Angles-Only Cooperative Local Catalog Maintenance of Close-Proximity Satellite Systems",
+        "authors": [
+            "C. W. Hays",
+            "T. Henderson",
+            "K. Miller",
+            "S. Phillips",
+            "A. Soderlund"
+        ],
+        "year": 2024,
+        "venue": "AIAA Journal of Guidance, Control, and Dynamics",
+        "volume": "47",
+        "issue": "12",
+        "pages": "2573-2586",
+        "month": "",
+        "location": "",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "catalog maintenance",
+            "close-proximity operations",
+            "angles-only navigation"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "journal-jgcd-2023-trajectory-synthesis",
+        "type": "journal",
+        "title": "Trajectory Synthesis for the Coordinated Inspection of a Spacecraft with Provable Safety Guarantees",
+        "authors": [
+            "M. Hibbard",
+            "M. Cubuktepe",
+            "M. Shubert",
+            "K. Lang",
+            "U. Topcu",
+            "S. Phillips"
+        ],
+        "year": 2023,
+        "venue": "AIAA Journal of Guidance, Control, and Dynamics",
+        "volume": "46",
+        "issue": "12",
+        "pages": "2245-2264",
+        "month": "",
+        "location": "",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "trajectory synthesis",
+            "spacecraft inspection",
+            "safety guarantees"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "book-cps-2026-event-driven",
+        "type": "book_chapter",
+        "title": "Event-Driven Distributed Cyber-Physical Systems",
+        "authors": [
+            "F. Zegers",
+            "S. Phillips",
+            "W. Dixon"
+        ],
+        "year": 2026,
+        "venue": "Smarter Cyber-Physical Systems: Enabling Methodologies and Applications (Y. Wan, K. Vamvoudakis, Y. Chen, F. Lewis, eds.), Springer",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "cyber-physical systems",
+            "event-driven control"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-aas-2026-mpc-inspection",
+        "type": "conference",
+        "title": "Information Aware Model Predictive Control for Satellite Inspection",
+        "authors": [
+            "S. E. Clees",
+            "S. Phillips",
+            "C. Petersen"
+        ],
+        "year": 2026,
+        "venue": "AAS Astrodynamics Specialist Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Whistler, CAN",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "model predictive control",
+            "satellite inspection"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-aas-2026-boundary-fitting",
+        "type": "conference",
+        "title": "Beyond Point Features: Direct Boundary Fitting and Pose-Gradient Methods for Space Object Imaging",
+        "authors": [
+            "D. Doyle",
+            "E. Glass",
+            "A. Yezzi",
+            "S. Phillips"
+        ],
+        "year": 2026,
+        "venue": "AAS Astrodynamics Specialist Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Whistler, CAN",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "space object imaging",
+            "pose estimation"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-aaai-2026-task-redistribution",
+        "type": "conference",
+        "title": "A Decentralized Framework for Resource-Constrained Task Redistribution",
+        "authors": [
+            "D. Reid",
+            "A. Releford",
+            "A. Andy",
+            "S. T. Smith",
+            "M. Alfred",
+            "S. Phillips"
+        ],
+        "year": 2026,
+        "venue": "AAAI Symposium Series",
+        "volume": "8",
+        "issue": "1",
+        "pages": "97-104",
+        "month": "",
+        "location": "Burlingame, CA",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "multi-agent systems",
+            "task allocation"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-gnc-2026-blender-imagery",
+        "type": "conference",
+        "title": "Utilizing Blender to Duplicate Radiometrically Correct Satellite Imagery with Realistic Rotation",
+        "authors": [
+            "G. Newcomb",
+            "L. Vance",
+            "S. Phillips",
+            "J. Thangavelautham"
+        ],
+        "year": 2026,
+        "venue": "47th Rocky Mountain AAS GN&C Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Breckenridge, CO",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "satellite imagery",
+            "simulation"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-gnc-2026-passive-imagery-pose",
+        "type": "conference",
+        "title": "Recovery of Cooperative Satellite Orientation and Range from Semi-Resolved Passive Color Imagery",
+        "authors": [
+            "Alexis Mungu\u00eda",
+            "Leonard Vance",
+            "S. Phillips",
+            "J. Thangavelautham"
+        ],
+        "year": 2026,
+        "venue": "47th Rocky Mountain AAS GN&C Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Breckenridge, CO",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "pose estimation",
+            "passive imaging"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-scitech-2026-trusted-autonomy-architecture",
+        "type": "conference",
+        "title": "An Architecture for Trusted Long-Duration Satellite Autonomy",
+        "authors": [
+            "J. Ludwig",
+            "D. Touhy",
+            "H. Schaub",
+            "A. Cheval",
+            "S. Phillips",
+            "K. Miller"
+        ],
+        "year": 2026,
+        "venue": "AIAA SciTech Forum",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Orlando, FL",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "trusted autonomy",
+            "satellite autonomy"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-nato-2026-hybrid-architecture",
+        "type": "conference",
+        "title": "On Autonomous Satellite Constellations Towards a Future Hybrid Space Architecture",
+        "authors": [
+            "S. Phillips",
+            "C. W. Hays"
+        ],
+        "year": 2026,
+        "venue": "NATO AVT-417 Research Specialists Meeting on Platform Implications for Hybrid Space Architectures for NATO",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Riga, LAT",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "Best Paper Award, NATO AVT-417.",
+        "keywords": [
+            "autonomous constellations",
+            "hybrid space architecture"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-scitech-2026-task-rescheduling",
+        "type": "conference",
+        "title": "Autonomous Task Rescheduling in a Heterogeneous LEO Satellite Constellation Using Reinforcement Learning",
+        "authors": [
+            "A. Reliford",
+            "D. Reid",
+            "S. T. Smith",
+            "A. Andy",
+            "M. Alfred",
+            "S. Phillips"
+        ],
+        "year": 2026,
+        "venue": "AIAA SciTech Forum",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Orlando, FL",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "reinforcement learning",
+            "task scheduling",
+            "leo constellation"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-mfi-2025-gmm-fusion",
+        "type": "conference",
+        "title": "Gaussian Mixture Model Fusion Across Decentralized Sensor Networks",
+        "authors": [
+            "I. Paranjape",
+            "J. Murray-Krezan",
+            "S. Phillips",
+            "S. Chakravorty",
+            "I. Hussein"
+        ],
+        "year": 2025,
+        "venue": "IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI)",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "College Station, TX",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "sensor fusion",
+            "gaussian mixture models",
+            "decentralized networks"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-sfm-2025-autonomy-levels",
+        "type": "conference",
+        "title": "Autonomy at Levels for Spacecraft",
+        "authors": [
+            "D. Baker",
+            "J. Wojcik",
+            "S. Phillips"
+        ],
+        "year": 2025,
+        "venue": "AAS/AIAA Space Flight Mechanics Meeting",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Kaua'i, HI",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "spacecraft autonomy",
+            "autonomy levels"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-gnc-2025-trusted-autonomy-demo",
+        "type": "conference",
+        "title": "Experimental Demonstrations of Trusted Distributed Autonomy Applications",
+        "authors": [
+            "J. Murray-Krezan",
+            "J. Baker",
+            "S. Bonbrest",
+            "H. Borowski",
+            "I. Hussein",
+            "S. Phillips"
+        ],
+        "year": 2025,
+        "venue": "46th Rocky Mountain AAS GN&C Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Breckenridge, CO",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "trusted autonomy",
+            "distributed autonomy"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-gnc-2025-multiagent-benchmark",
+        "type": "conference",
+        "title": "Multiagent Satellite Autonomy: A Benchmark Evaluation Framework",
+        "authors": [
+            "Z. S. Lippay",
+            "S. Phillips",
+            "A. Maghareh"
+        ],
+        "year": 2025,
+        "venue": "46th Rocky Mountain AAS GN&C Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Breckenridge, CO",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "multi-agent systems",
+            "satellite autonomy",
+            "benchmarking"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-scitech-2025-info-gain-fusion",
+        "type": "conference",
+        "title": "Optimizing Potential Information Gain From Satellites Over Space and Time for Heterogeneous Information Fusion",
+        "authors": [
+            "E. Jose",
+            "R. Batta",
+            "M. Sudit",
+            "D. Sudit",
+            "J. L. Crassidis",
+            "C. Nebelecky",
+            "S. Phillips",
+            "A. Soderlund"
+        ],
+        "year": 2025,
+        "venue": "AIAA SciTech Forum",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Orlando, FL",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "information fusion",
+            "sensor tasking"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-scitech-2025-rl-rta-uav-inspection",
+        "type": "conference",
+        "title": "Demonstrating Reinforcement Learning and Run Time Assurance for Spacecraft Inspection Using Unmanned Aerial Vehicles",
+        "authors": [
+            "K. Dunlap",
+            "N. P. Hamilton",
+            "Z. Lippay",
+            "M. Shubert",
+            "S. Phillips",
+            "K. L. Hobbs"
+        ],
+        "year": 2025,
+        "venue": "AIAA SciTech Forum",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Orlando, FL",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "reinforcement learning",
+            "runtime assurance",
+            "spacecraft inspection",
+            "unmanned aerial vehicles"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-acc-2024-damping-control",
+        "type": "conference",
+        "title": "Robust Hybrid Wide-Area Damping Control for Power Systems with Communication Errors",
+        "authors": [
+            "D. A. Copp",
+            "S. Phillips"
+        ],
+        "year": 2024,
+        "venue": "American Control Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Toronto, CAN",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "hybrid systems",
+            "power systems",
+            "damping control"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-acc-2024-reachability-switching",
+        "type": "conference",
+        "title": "Guaranteed Safe Satellite Guidance and Navigation Using Reachability-Based Switching Controllers",
+        "authors": [
+            "K. Miller",
+            "S. Phillips",
+            "S. Mitra"
+        ],
+        "year": 2024,
+        "venue": "American Control Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Toronto, CAN",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "reachability analysis",
+            "satellite guidance",
+            "switching control"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-acc-2024-omniscience",
+        "type": "conference",
+        "title": "A Necessary and Sufficient Condition for State Omniscience of Linear Time-Invariant Distributed Estimators",
+        "authors": [
+            "C. W. Hays",
+            "S. Phillips",
+            "T. Henderson"
+        ],
+        "year": 2024,
+        "venue": "American Control Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Toronto, CAN",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "distributed estimation",
+            "observability",
+            "state omniscience"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-acc-2024-transport-maps",
+        "type": "conference",
+        "title": "Distributed Nonlinear Filtering Using Triangular Transport Maps",
+        "authors": [
+            "D. Grange",
+            "R. Baptista",
+            "A. Taghvaei",
+            "A. Tannenbaum",
+            "S. Phillips"
+        ],
+        "year": 2024,
+        "venue": "American Control Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Toronto, CAN",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "nonlinear filtering",
+            "transport maps",
+            "distributed estimation"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-aero-2024-tda-simulation",
+        "type": "conference",
+        "title": "Simulation-Based Results of the Trusted Distributed Autonomy Demonstration Experiment",
+        "authors": [
+            "J. Murray-Krezan",
+            "I. I. Hussein",
+            "H. Borowski",
+            "J. Baker",
+            "C. Elliott",
+            "S. Phillips"
+        ],
+        "year": 2024,
+        "venue": "IEEE Aerospace Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Big Sky, MT",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "trusted autonomy",
+            "distributed autonomy"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-gnc-2024-drl-stability-testbed",
+        "type": "conference",
+        "title": "Stability Analysis of Deep Reinforcement Learning for Multi-Agent Inspection in a Terrestrial Testbed",
+        "authors": [
+            "J. Aurand",
+            "Z. Lippay",
+            "S. Cutlip",
+            "H. Lei",
+            "M. Shubert",
+            "S. Phillips"
+        ],
+        "year": 2024,
+        "venue": "46th Rocky Mountain AAS GN&C Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Breckenridge, CO",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "deep reinforcement learning",
+            "stability analysis",
+            "multi-agent inspection",
+            "terrestrial testbed"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-gnc-2024-sensor-tasking",
+        "type": "conference",
+        "title": "Multi-Sensor Tasking Strategies for Situational Awareness",
+        "authors": [
+            "I. Paranjape",
+            "S. Chakravorty",
+            "S. Phillips",
+            "I. I. Hussein",
+            "J. Murray-Krezan",
+            "H. Borowski",
+            "J. Baker"
+        ],
+        "year": 2024,
+        "venue": "46th Rocky Mountain AAS GN&C Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Breckenridge, CO",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "sensor tasking",
+            "situational awareness"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-gnc-2024-resource-management",
+        "type": "conference",
+        "title": "Application of Trusted Distributed On-board Autonomous Resource Management",
+        "authors": [
+            "H. Borowski",
+            "I. I. Hussein",
+            "S. Phillips",
+            "J. Murray-Krezan",
+            "J. Baker",
+            "C. Elliott"
+        ],
+        "year": 2024,
+        "venue": "46th Rocky Mountain AAS GN&C Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Breckenridge, CO",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "trusted autonomy",
+            "resource management"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-scitech-2024-sim-rl-long-duration",
+        "type": "conference",
+        "title": "Using Enhanced Simulation Environments to Improve Reinforcement Learning for Long-Duration Satellite Autonomy",
+        "authors": [
+            "M. Stephenson",
+            "L. Mantovani",
+            "S. Phillips",
+            "H. Schaub"
+        ],
+        "year": 2024,
+        "venue": "AIAA SciTech Forum",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Orlando, FL",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "reinforcement learning",
+            "simulation",
+            "satellite autonomy"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-scitech-2024-passive-inspection-coverage",
+        "type": "conference",
+        "title": "Multi-Agent Passive Inspection Coverage of an Unknown Torque-Free Rigid Body Using Monte Carlo Analysis and Quaternion Measurements",
+        "authors": [
+            "S. C. Cutlip",
+            "J. Aurand",
+            "K. Lang",
+            "S. Phillips"
+        ],
+        "year": 2024,
+        "venue": "AIAA SciTech Forum",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Orlando, FL",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "multi-agent inspection",
+            "coverage control",
+            "monte carlo analysis"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-scitech-2024-cma-rhino",
+        "type": "conference",
+        "title": "Extended Abstract for Collaborative Mission Autonomy for Resilient Highly Integrated Networked Operations (CMA-RHINO)",
+        "authors": [
+            "M. J. Park",
+            "D. Markovic",
+            "M. Mesbahi",
+            "S. Phillips"
+        ],
+        "year": 2024,
+        "venue": "AIAA SciTech Forum",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Orlando, FL",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "collaborative autonomy",
+            "networked operations"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-scitech-2024-uav-emulation",
+        "type": "conference",
+        "title": "Emulation of Close-Proximity Spacecraft Dynamics in Terrestrial Environments Using Unmanned Aerial Vehicles",
+        "authors": [
+            "S. Phillips",
+            "Z. Lippay",
+            "D. Baker",
+            "A. A. Soderlund",
+            "M. Shubert"
+        ],
+        "year": 2024,
+        "venue": "AIAA SciTech Forum",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Orlando, FL",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "close-proximity operations",
+            "terrestrial testing",
+            "unmanned aerial vehicles"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-scitech-2024-omnidirectional-uav",
+        "type": "conference",
+        "title": "Control for an Omnidirectional Multi-Rotor UAV for Space Applications",
+        "authors": [
+            "R. M. McCarthy",
+            "T. Thomas",
+            "C. Danielson",
+            "S. Phillips",
+            "R. Fierro"
+        ],
+        "year": 2024,
+        "venue": "AIAA SciTech Forum",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Orlando, FL",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "unmanned aerial vehicles",
+            "control design"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-plans-2023-consensus-pose",
+        "type": "conference",
+        "title": "Consensus on Region-Based Pose Estimation for Satellites",
+        "authors": [
+            "D. Grange",
+            "R. Sandhu",
+            "A. A. Soderlund",
+            "S. Phillips"
+        ],
+        "year": 2023,
+        "venue": "IEEE/ION Position, Location and Navigation Symposium (PLANS)",
+        "volume": "",
+        "issue": "",
+        "pages": "1322-1329",
+        "month": "",
+        "location": "Monterey, CA",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "pose estimation",
+            "consensus",
+            "satellites"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-aas-2022-sliding-mode-charlotte",
+        "type": "conference",
+        "title": "Sliding Mode Control of Satellite Formation Proximity Operations Under Imperfect Communications",
+        "authors": [
+            "C. Staudt",
+            "C. Zagaris",
+            "S. Phillips"
+        ],
+        "year": 2022,
+        "venue": "AAS/AIAA Astrodynamics Specialist Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Charlotte, NC",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "sliding mode control",
+            "satellite formation",
+            "proximity operations"
+        ],
+        "bibtex": ""
+    },
+    {
+        "id": "conf-aas-2022-observability-function",
+        "type": "conference",
+        "title": "A Function for Observability Analysis of Multi-agent Spacecraft Formation Trajectories",
+        "authors": [
+            "W. Flores",
+            "C. Zagaris",
+            "S. Phillips"
+        ],
+        "year": 2022,
+        "venue": "AAS/AIAA Astrodynamics Specialist Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "",
+        "location": "Charlotte, NC",
+        "pdf": "",
+        "doi": "",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "observability",
+            "multi-agent systems",
+            "spacecraft formation"
+        ],
+        "bibtex": ""
+    },
+    {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2602.21334",
-        "authors":
-        [
+        "authors": [
             "O. J. Chuy",
             "M. T. Hale",
             "V. Sivaramakrishnan",
@@ -14,8 +1218,7 @@
         "citation_count": null,
         "doi": "",
         "id": "arxiv-2026-rendezvous-hybrid-feedback",
-        "keywords":
-        [
+        "keywords": [
             "rendezvous",
             "hybrid feedback optimization",
             "satellite",
@@ -24,14 +1227,13 @@
         "pdf": "",
         "title": "Autonomous Satellite Rendezvous via Hybrid Feedback Optimization",
         "type": "preprint",
-        "venue": "arXiv preprint",
+        "venue": "arXiv preprint (under review, Nonlinear Analysis: Hybrid Systems Special Issue on Applications of Hybrid Systems)",
         "year": 2026
     },
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "F. M. Zegers",
             "S. Phillips",
             "G. P. Hicks"
@@ -41,14 +1243,13 @@
         "doi": "10.1109/TCNS.2025.3526717",
         "id": "journal-tcns-2025-coverage",
         "issue": "2",
-        "keywords":
-        [
+        "keywords": [
             "coverage control",
             "mobile sensors",
             "timer-based",
             "networked systems"
         ],
-        "pages": "1600–1612",
+        "pages": "1600\u20131612",
         "pdf": "",
         "title": "Timer-Based Coverage Control for Mobile Sensors",
         "type": "journal",
@@ -59,8 +1260,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "C. Mehlman",
             "A. Kounios",
             "L. Lai",
@@ -83,13 +1283,12 @@
         "citation_count": null,
         "doi": "10.24251/HICSS.2025.870",
         "id": "conf-hicss-2025-magpie",
-        "keywords":
-        [
+        "keywords": [
             "satellite autonomy",
             "uncooperative environments",
             "space domain awareness"
         ],
-        "pages": "1–10",
+        "pages": "1\u201310",
         "pdf": "",
         "title": "The MAGPIE: Satellite Autonomy for Uncooperative Environments",
         "type": "conference",
@@ -99,8 +1298,7 @@
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2501.04160",
-        "authors":
-        [
+        "authors": [
             "C. F. Nino",
             "O. S. Patil",
             "C. D. Petersen",
@@ -111,8 +1309,7 @@
         "citation_count": null,
         "doi": "",
         "id": "arxiv-2025-spacecraft-servicing-lyapunov",
-        "keywords":
-        [
+        "keywords": [
             "spacecraft servicing",
             "Lyapunov",
             "deep neural networks",
@@ -120,15 +1317,16 @@
         ],
         "pdf": "",
         "title": "Collaborative Spacecraft Servicing under Partial Feedback using Lyapunov-based Deep Neural Networks",
-        "type": "preprint",
-        "venue": "arXiv preprint",
-        "year": 2025
+        "type": "journal",
+        "venue": "Journal of the Astronautical Sciences",
+        "year": 2025,
+        "volume": "72",
+        "location": ""
     },
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2501.05984",
-        "authors":
-        [
+        "authors": [
             "K. L. Hobbs",
             "S. Phillips",
             "M. Simon",
@@ -148,8 +1346,7 @@
         "citation_count": null,
         "doi": "",
         "id": "arxiv-2025-stars-program",
-        "keywords":
-        [
+        "keywords": [
             "trusted autonomy",
             "responsible space",
             "satellite autonomy",
@@ -164,8 +1361,7 @@
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2501.13236",
-        "authors":
-        [
+        "authors": [
             "G. Behrendt",
             "M. Hale",
             "A. A. Soderlund",
@@ -176,8 +1372,7 @@
         "citation_count": null,
         "doi": "",
         "id": "arxiv-2025-tc-mpc-rpod",
-        "keywords":
-        [
+        "keywords": [
             "model predictive control",
             "rendezvous",
             "proximity operations",
@@ -193,8 +1388,7 @@
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2502.19556",
-        "authors":
-        [
+        "authors": [
             "J. Aurand",
             "C. Pang",
             "S. Mokhtar",
@@ -206,8 +1400,7 @@
         "citation_count": null,
         "doi": "",
         "id": "arxiv-2025-inspection-regimes",
-        "keywords":
-        [
+        "keywords": [
             "satellite inspection",
             "autonomous inspection",
             "active inspection",
@@ -215,15 +1408,15 @@
         ],
         "pdf": "",
         "title": "Assessing Autonomous Inspection Regimes: Active Versus Passive Satellite Inspection",
-        "type": "preprint",
-        "venue": "arXiv preprint",
-        "year": 2025
+        "type": "conference",
+        "venue": "AIAA SciTech Forum",
+        "year": 2025,
+        "location": "Orlando, FL"
     },
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2502.20554",
-        "authors":
-        [
+        "authors": [
             "H. Lei",
             "J. Aurand",
             "Z. S. Lippay",
@@ -233,8 +1426,7 @@
         "citation_count": null,
         "doi": "",
         "id": "arxiv-2025-drl-terrestrial-proximity",
-        "keywords":
-        [
+        "keywords": [
             "deep reinforcement learning",
             "proximity operations",
             "terrestrial testing",
@@ -242,15 +1434,15 @@
         ],
         "pdf": "",
         "title": "Close-Proximity Satellite Operations through Deep Reinforcement Learning and Terrestrial Testing Environments",
-        "type": "preprint",
-        "venue": "arXiv preprint",
-        "year": 2025
+        "type": "conference",
+        "venue": "46th Rocky Mountain AAS GN&C Conference",
+        "year": 2025,
+        "location": "Breckenridge, CO"
     },
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2503.00056",
-        "authors":
-        [
+        "authors": [
             "H. Lei",
             "Z. S. Lippay",
             "A. Zaman",
@@ -262,8 +1454,7 @@
         "citation_count": null,
         "doi": "",
         "id": "arxiv-2025-drl-stability-testbed",
-        "keywords":
-        [
+        "keywords": [
             "deep reinforcement learning",
             "stability analysis",
             "multi-agent inspection",
@@ -271,15 +1462,15 @@
         ],
         "pdf": "",
         "title": "Stability Analysis of Deep Reinforcement Learning for Multi-Agent Inspection in a Terrestrial Testbed",
-        "type": "preprint",
-        "venue": "arXiv preprint",
-        "year": 2025
+        "type": "conference",
+        "venue": "AIAA SciTech Forum",
+        "year": 2025,
+        "location": "Orlando, FL"
     },
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2503.01049",
-        "authors":
-        [
+        "authors": [
             "D. Baker",
             "S. Phillips"
         ],
@@ -287,8 +1478,7 @@
         "citation_count": null,
         "doi": "",
         "id": "arxiv-2025-spacecraft-autonomy-levels",
-        "keywords":
-        [
+        "keywords": [
             "spacecraft autonomy",
             "autonomy levels",
             "space systems"
@@ -302,8 +1492,7 @@
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2503.01928",
-        "authors":
-        [
+        "authors": [
             "D. Baker",
             "S. Phillips"
         ],
@@ -311,23 +1500,22 @@
         "citation_count": null,
         "doi": "",
         "id": "arxiv-2025-levels-spacecraft-autonomy",
-        "keywords":
-        [
+        "keywords": [
             "spacecraft autonomy",
             "autonomy levels",
             "space systems"
         ],
         "pdf": "",
         "title": "Levels of Spacecraft Autonomy",
-        "type": "preprint",
-        "venue": "arXiv preprint",
-        "year": 2025
+        "type": "conference",
+        "venue": "46th Rocky Mountain AAS GN&C Conference",
+        "year": 2025,
+        "location": "Breckenridge, CO"
     },
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2504.04347",
-        "authors":
-        [
+        "authors": [
             "F. M. Zegers",
             "S. Phillips"
         ],
@@ -335,8 +1523,7 @@
         "citation_count": null,
         "doi": "",
         "id": "arxiv-2025-chronosync",
-        "keywords":
-        [
+        "keywords": [
             "synchronization",
             "decentralized",
             "multi-agent systems",
@@ -351,8 +1538,7 @@
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2506.00383",
-        "authors":
-        [
+        "authors": [
             "I. Paranjape",
             "I. I. Hussein",
             "J. Murray-Krezan",
@@ -363,8 +1549,7 @@
         "citation_count": null,
         "doi": "",
         "id": "arxiv-2025-sensor-fusion-gmm",
-        "keywords":
-        [
+        "keywords": [
             "sensor fusion",
             "Gaussian mixture models",
             "estimation",
@@ -379,8 +1564,7 @@
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2508.14226",
-        "authors":
-        [
+        "authors": [
             "D. Baker",
             "J. Wojcik",
             "S. Phillips"
@@ -389,23 +1573,22 @@
         "citation_count": null,
         "doi": "",
         "id": "arxiv-2025-autonomy-at-levels",
-        "keywords":
-        [
+        "keywords": [
             "spacecraft autonomy",
             "autonomy levels",
             "space systems"
         ],
         "pdf": "",
         "title": "Autonomy at Levels for Spacecraft",
-        "type": "preprint",
-        "venue": "arXiv preprint",
-        "year": 2025
+        "type": "conference",
+        "venue": "AAS/AIAA Astrodynamics Specialist Conference",
+        "year": 2025,
+        "location": "Boston, MA"
     },
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "R. G. Sanfelice"
         ],
@@ -414,14 +1597,13 @@
         "doi": "10.1109/TAC.2024.3355113",
         "id": "journal-tac-2024-consensus",
         "issue": "11",
-        "keywords":
-        [
+        "keywords": [
             "consensus",
             "exponential stability",
             "intermittent communication",
             "hybrid systems"
         ],
-        "pages": "7540–7555",
+        "pages": "7540\u20137555",
         "pdf": "",
         "title": "Pointwise Exponential Stability of State Consensus With Intermittent Communication",
         "type": "journal",
@@ -432,8 +1614,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "C. W. Hays",
             "K. Miller",
             "A. A. Soderlund",
@@ -444,8 +1625,7 @@
         "citation_count": null,
         "doi": "10.2514/6.2024-0992",
         "id": "conf-aiaa-2024-catalog-omniscience",
-        "keywords":
-        [
+        "keywords": [
             "catalog maintenance",
             "close proximity",
             "cooperative satellite",
@@ -461,16 +1641,14 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips"
         ],
         "bibtex": "@phdthesis{phillips2018phd,\n  author    = {Sean Phillips},\n  title     = {Coordination and Control of Networked Systems with Intermittent Communication},\n  school    = {University of California, Santa Cruz},\n  year      = {2018}\n}",
         "citation_count": null,
         "doi": "",
         "id": "thesis-phd",
-        "keywords":
-        [
+        "keywords": [
             "hybrid systems",
             "networked systems",
             "intermittent communication",
@@ -485,16 +1663,14 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips"
         ],
         "bibtex": "@mastersthesis{phillips2013ms,\n  author    = {Sean Phillips},\n  title     = {Modeling and Analysis of Robust Stability for Spiking Neuron Models},\n  school    = {University of Arizona},\n  year      = {2013}\n}",
         "citation_count": null,
         "doi": "",
         "id": "thesis-ms",
-        "keywords":
-        [
+        "keywords": [
             "biological modeling",
             "spiking neuron",
             "robust stability",
@@ -509,8 +1685,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "C. Petersen",
             "R. Fierro"
@@ -519,8 +1694,7 @@
         "citation_count": null,
         "doi": "",
         "id": "book-satellite-formation",
-        "keywords":
-        [
+        "keywords": [
             "satellite formation",
             "robust control",
             "resilient control",
@@ -535,8 +1709,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "R. G. Sanfelice"
         ],
@@ -544,15 +1717,14 @@
         "citation_count": null,
         "doi": "",
         "id": "journal-automatica-2019",
-        "keywords":
-        [
+        "keywords": [
             "distributed synchronization",
             "networked systems",
             "intermittent information",
             "linear systems"
         ],
         "month": "July",
-        "pages": "323–333",
+        "pages": "323\u2013333",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/phillips.auto_.16.pdf",
         "title": "Robust Distributed Synchronization of Networked Linear Systems with Intermittent Information",
         "type": "journal",
@@ -563,8 +1735,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "Y. Li",
             "S. Phillips",
             "R. G. Sanfelice"
@@ -574,14 +1745,13 @@
         "doi": "",
         "id": "journal-tac-2018",
         "issue": "4",
-        "keywords":
-        [
+        "keywords": [
             "distributed estimation",
             "intermittent information",
             "linear systems",
             "robust control"
         ],
-        "pages": "973–988",
+        "pages": "973\u2013988",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/li.ea_.tac_.2018.pdf",
         "title": "Robust Distributed Estimation for Linear Systems under Intermittent Information",
         "type": "journal",
@@ -592,8 +1762,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "Y. Li",
             "S. Phillips",
             "R. G. Sanfelice"
@@ -602,13 +1771,12 @@
         "citation_count": null,
         "doi": "",
         "id": "journal-scl-2016",
-        "keywords":
-        [
+        "keywords": [
             "hybrid systems",
             "incremental stability",
             "flow time"
         ],
-        "pages": "7–15",
+        "pages": "7\u201315",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/li.ea_.16.scl_.pdf",
         "title": "Basic Properties and Characterization of Incremental Prioritizing Flow Time for a Class of Hybrid Systems",
         "type": "journal",
@@ -619,8 +1787,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "R. G. Sanfelice"
         ],
@@ -629,14 +1796,13 @@
         "doi": "",
         "id": "journal-tcns-2016",
         "issue": "2",
-        "keywords":
-        [
+        "keywords": [
             "desynchronization",
             "impulse-coupled oscillators",
             "asymptotic stability",
             "networked systems"
         ],
-        "pages": "127–136",
+        "pages": "127\u2013136",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/phillips.es_.16.tcns_.pdf",
         "title": "Robust Asymptotic Stability of Desynchronization in Impulse-coupled Oscillators",
         "type": "journal",
@@ -647,8 +1813,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "G. Behrendt",
             "A. A. Soderlund",
             "S. Phillips",
@@ -658,8 +1823,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-ifac-2023-rendezvous",
-        "keywords":
-        [
+        "keywords": [
             "rendezvous",
             "proximity operations",
             "model predictive control",
@@ -675,8 +1839,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "C. F. Nino",
             "F. M. Zegers",
             "S. Phillips",
@@ -686,8 +1849,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-acc-2023-consensus",
-        "keywords":
-        [
+        "keywords": [
             "consensus",
             "clustered networks",
             "output feedback",
@@ -703,8 +1865,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "C. A. Hays",
             "A. A. Soderlund",
             "S. Phillips",
@@ -714,8 +1875,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-acc-2023-controllability",
-        "keywords":
-        [
+        "keywords": [
             "controllability",
             "linear systems",
             "LTI systems"
@@ -730,8 +1890,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "C. Petersen",
             "R. J. Caverly",
             "S. Phillips",
@@ -741,8 +1900,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-acc-2023-rpod",
-        "keywords":
-        [
+        "keywords": [
             "rendezvous",
             "proximity operations",
             "docking",
@@ -758,8 +1916,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "K. Miller",
             "J. M. Brewer",
             "A. A. Soderlund",
@@ -769,8 +1926,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-acc-2023-sensor-safety",
-        "keywords":
-        [
+        "keywords": [
             "sensor safety",
             "multi-objective control",
             "nonlinear dynamics",
@@ -786,8 +1942,7 @@
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2210.09059",
-        "authors":
-        [
+        "authors": [
             "K. L. Hobbs",
             "J. B. Lyons",
             "M. S. Feather",
@@ -803,8 +1958,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-ieee-aero-2023-tarl",
-        "keywords":
-        [
+        "keywords": [
             "trusted autonomy",
             "space systems",
             "readiness levels"
@@ -819,8 +1973,7 @@
     {
         "abstract": "",
         "arxiv": "http://arxiv.org/abs/2302.00601",
-        "authors":
-        [
+        "authors": [
             "C. Hays",
             "K. Miller",
             "A. A. Soderlund",
@@ -831,8 +1984,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aas-2023-catalog",
-        "keywords":
-        [
+        "keywords": [
             "catalog maintenance",
             "proximity operations",
             "natural motion trajectories",
@@ -848,8 +2000,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "V. Bajenaru",
             "A. Herrmann",
             "H. Schaub",
@@ -860,8 +2011,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aas-2023-drl-command",
-        "keywords":
-        [
+        "keywords": [
             "deep reinforcement learning",
             "satellite constellations",
             "explainable AI",
@@ -877,8 +2027,7 @@
     {
         "abstract": "",
         "arxiv": "https://arxiv.org/abs/2302.14188",
-        "authors":
-        [
+        "authors": [
             "J. Aurand",
             "S. Cutlip",
             "H. Lei",
@@ -889,8 +2038,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aas-2023-inspection",
-        "keywords":
-        [
+        "keywords": [
             "multi-agent inspection",
             "deep reinforcement learning",
             "tumbling target",
@@ -906,8 +2054,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "V. Chen",
             "D. A. Copp",
             "S. Phillips"
@@ -916,8 +2063,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aas-2023-rl-rpod",
-        "keywords":
-        [
+        "keywords": [
             "reinforcement learning",
             "rendezvous and docking",
             "trajectory planning",
@@ -933,8 +2079,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "C. Staudt",
             "C. Zagaris",
             "S. Phillips"
@@ -943,8 +2088,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aas-2023-sliding-mode",
-        "keywords":
-        [
+        "keywords": [
             "sliding mode control",
             "satellite formation",
             "network trust",
@@ -960,8 +2104,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "A. Dang",
             "D. A. Copp",
             "S. Phillips"
@@ -970,8 +2113,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aas-2023-state-estimation",
-        "keywords":
-        [
+        "keywords": [
             "state estimation",
             "model predictive control",
             "rendezvous and docking",
@@ -987,8 +2129,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "A. C. Nichols",
             "S. Phillips",
             "A. Soderlund"
@@ -997,8 +2138,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aiaa-2023-honeybee",
-        "keywords":
-        [
+        "keywords": [
             "resilience",
             "multi-satellite",
             "swarm optimization",
@@ -1014,8 +2154,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "C. W. Hays",
             "T. Henderson",
             "S. Phillips",
@@ -1025,8 +2164,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aiaa-2023-observability",
-        "keywords":
-        [
+        "keywords": [
             "observability",
             "space sensor",
             "constellation",
@@ -1042,8 +2180,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "K. Miller",
             "S. Phillips",
             "A. A. Soderlund"
@@ -1052,8 +2189,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aiaa-2023-games",
-        "keywords":
-        [
+        "keywords": [
             "multi-agent",
             "game theory",
             "lexicographic preferences",
@@ -1069,8 +2205,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "A. A. Soderlund",
             "S. Phillips"
         ],
@@ -1078,8 +2213,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-cdc-2022",
-        "keywords":
-        [
+        "keywords": [
             "formation control",
             "distributed systems",
             "asynchronous measurements",
@@ -1095,8 +2229,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "H. H. Lei",
             "M. Shubert",
             "N. Damron",
@@ -1107,8 +2240,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aas-2022-drl-inspection",
-        "keywords":
-        [
+        "keywords": [
             "deep reinforcement learning",
             "multi-agent",
             "satellite inspection",
@@ -1124,8 +2256,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "A. Soderlund",
             "S. Phillips"
         ],
@@ -1133,8 +2264,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aiaa-2022-underactuated",
-        "keywords":
-        [
+        "keywords": [
             "underactuated spacecraft",
             "switching controls",
             "rendezvous",
@@ -1150,8 +2280,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "C. Petersen",
             "S. Phillips",
             "D. Hustig-Schultz",
@@ -1161,8 +2290,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-caadcps-2021",
-        "keywords":
-        [
+        "keywords": [
             "hybrid model predictive control",
             "satellite",
             "cyber-physical systems",
@@ -1179,8 +2307,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "J. M. Brewer",
             "P. Tsiotras",
             "K. Lang",
@@ -1190,8 +2317,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-acc-2021-falsification",
-        "keywords":
-        [
+        "keywords": [
             "falsification",
             "verification",
             "attitude control",
@@ -1207,8 +2333,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "F. Zegers",
             "S. Phillips",
             "W. Dixon"
@@ -1217,8 +2342,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-acc-2021-consensus",
-        "keywords":
-        [
+        "keywords": [
             "consensus",
             "clustered networks",
             "asynchronous communication"
@@ -1233,8 +2357,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "C. Petersen",
             "S. Phillips",
             "K. Hobbs",
@@ -1244,8 +2367,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aas-sfm-2021-assured",
-        "keywords":
-        [
+        "keywords": [
             "assured autonomy",
             "proximity operations",
             "satellite",
@@ -1261,8 +2383,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "A. Zaman",
             "A. Soderlund",
             "C. Petersen",
@@ -1272,8 +2393,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aas-sfm-2021-mpc",
-        "keywords":
-        [
+        "keywords": [
             "model predictive control",
             "rendezvous",
             "proximity operations",
@@ -1289,8 +2409,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "C. Petersen",
             "R. Fierro"
@@ -1299,8 +2418,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aiaa-2021-formation",
-        "keywords":
-        [
+        "keywords": [
             "formation control",
             "intermittent communication",
             "spacecraft"
@@ -1315,8 +2433,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "A. Soderlund",
             "A. Zaman",
             "C. Petersen",
@@ -1326,8 +2443,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aiaa-2021-geometric",
-        "keywords":
-        [
+        "keywords": [
             "geometric control",
             "rendezvous",
             "proximity operations",
@@ -1343,8 +2459,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "F. Parra",
             "S. Phillips"
         ],
@@ -1352,8 +2467,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aiaa-2021-auction",
-        "keywords":
-        [
+        "keywords": [
             "auction algorithms",
             "task allocation",
             "multi-satellite",
@@ -1369,8 +2483,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "K. Lang",
             "C. Klett",
             "K. Hawkins",
@@ -1382,8 +2495,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aiaa-2021-formal",
-        "keywords":
-        [
+        "keywords": [
             "formal verification",
             "attitude control",
             "autonomous spacecraft"
@@ -1398,8 +2510,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "M. Mercier",
             "S. Phillips",
             "M. Shubert",
@@ -1409,15 +2520,14 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-plans-2020",
-        "keywords":
-        [
+        "keywords": [
             "multi-agent",
             "guidance navigation and control",
             "terrestrial testing",
             "relative navigation"
         ],
         "location": "Portland, OR",
-        "pages": "1488–1497",
+        "pages": "1488\u20131497",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2022/02/2020_mercier_ion-1.pdf",
         "title": "Terrestrial Testing of Multi-Agent, Relative Guidance, Navigation, and Control Algorithms",
         "type": "conference",
@@ -1427,8 +2537,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "C. Petersen",
             "R. Fierro"
@@ -1437,8 +2546,7 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-aiaa-2020-resilient",
-        "keywords":
-        [
+        "keywords": [
             "resilient control",
             "spacecraft formation",
             "malfunctioning communications"
@@ -1453,8 +2561,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "R. G. Sanfelice"
         ],
@@ -1462,14 +2569,13 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-cdc-2019",
-        "keywords":
-        [
+        "keywords": [
             "observer-based synchronization",
             "multi-agent systems",
             "intermittent measurements"
         ],
         "location": "Nice, France",
-        "pages": "8160–8165",
+        "pages": "8160\u20138165",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2020/10/phillips.ea_.2019.pdf",
         "title": "Observer-based Synchronization of Multi-agent Systems using Intermittent Measurements",
         "type": "conference",
@@ -1479,8 +2585,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "D. Lavell",
             "S. Phillips",
             "R. G. Sanfelice"
@@ -1489,15 +2594,14 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-cdc-2018-pid",
-        "keywords":
-        [
+        "keywords": [
             "PID control",
             "hybrid systems",
             "asymptotic stabilization",
             "intermittent measurements"
         ],
         "location": "Miami Beach, FL",
-        "pages": "737–742",
+        "pages": "737\u2013742",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/lavell.ea_.18.cdc_.pdf",
         "title": "A Hybrid PID Design for Asymptotic Stabilization with Intermittent Measurements",
         "type": "conference",
@@ -1507,8 +2611,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "R. S. Erwin",
             "R. G. Sanfelice"
@@ -1517,15 +2620,14 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-acc-2018-estimation",
-        "keywords":
-        [
+        "keywords": [
             "state estimation",
             "intermittent transmission",
             "exponential stability",
             "robust control"
         ],
         "location": "Milwaukee, WI",
-        "pages": "622–627",
+        "pages": "622\u2013627",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/phillips.ea_.18.acc_.pdf",
         "title": "Robust Exponential Stability of an Intermittent Transmission State Estimation Protocol",
         "type": "conference",
@@ -1535,8 +2637,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "A. Duz",
             "S. Phillips",
             "A. Fagiolini",
@@ -1547,15 +2648,14 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-acc-2018-stealthy",
-        "keywords":
-        [
+        "keywords": [
             "cyber-physical security",
             "stealthy attacks",
             "impulsive systems",
             "cloud-connected"
         ],
         "location": "Milwaukee, WI",
-        "pages": "146–152",
+        "pages": "146\u2013152",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/duz.ea_.18.acc_.pdf",
         "title": "Stealthy Attacks in Cloud-Connected Linear-Impulsive Systems",
         "type": "conference",
@@ -1565,8 +2665,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "A. Duz",
             "F. Pasqualetti",
@@ -1576,15 +2675,14 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-cdc-2017-attack",
-        "keywords":
-        [
+        "keywords": [
             "attack detection",
             "cyber-physical systems",
             "hybrid systems",
             "security"
         ],
         "location": "Melbourne, VIC, Australia",
-        "pages": "1368–1373",
+        "pages": "1368\u20131373",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/phillips.ea_.17.cdc_.pdf",
         "title": "Hybrid Attack Monitor Design to Detect Recurrent Attacks in a Class of Cyber-Physical Systems",
         "type": "conference",
@@ -1594,8 +2692,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "R. G. Sanfelice"
         ],
@@ -1603,13 +2700,12 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-acc-2017-synchronization",
-        "keywords":
-        [
+        "keywords": [
             "asymptotic synchronization",
             "interconnected hybrid systems"
         ],
         "location": "Seattle, WA",
-        "pages": "2291–2296",
+        "pages": "2291\u20132296",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/phillips.sanfelice.17.acc_.pdf",
         "title": "On asymptotic synchronization of interconnected hybrid systems with applications",
         "type": "conference",
@@ -1619,8 +2715,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "Y. Li",
             "R. G. Sanfelice"
@@ -1629,15 +2724,14 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-nolcos-2016-consensus",
-        "keywords":
-        [
+        "keywords": [
             "consensus protocol",
             "exponential stability",
             "intermittent information",
             "hybrid systems"
         ],
         "location": "Monterey, CA",
-        "pages": "146–151",
+        "pages": "146\u2013151",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/phillips.ea_.16.nolcos.pdf",
         "title": "A Hybrid Consensus Protocol for Pointwise Exponential Stability with Intermittent Information",
         "type": "conference",
@@ -1647,8 +2741,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "Y. Li",
             "S. Phillips",
             "R. G. Sanfelice"
@@ -1657,14 +2750,13 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-nolcos-2016-observers",
-        "keywords":
-        [
+        "keywords": [
             "distributed observers",
             "LTI systems",
             "intermittent information"
         ],
         "location": "Monterey, CA",
-        "pages": "654–659",
+        "pages": "654\u2013659",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/li.ea_.16.nolcos.pdf",
         "title": "On Distributed Observers for Linear Time-invariant Systems Under Intermittent Information Constraints",
         "type": "conference",
@@ -1674,8 +2766,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "R. G. Sanfelice"
         ],
@@ -1683,15 +2774,14 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-acc-2016-robust-sync",
-        "keywords":
-        [
+        "keywords": [
             "robust synchronization",
             "intermittent communication",
             "linear systems",
             "networked control"
         ],
         "location": "Boston, MA",
-        "pages": "5575–5580",
+        "pages": "5575\u20135580",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/phillips.ea_.16.acc_.pdf",
         "title": "Robust synchronization of interconnected linear systems over intermittent communication networks",
         "type": "conference",
@@ -1701,8 +2791,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "R. G. Sanfelice"
         ],
@@ -1710,14 +2799,13 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-cdc-2015",
-        "keywords":
-        [
+        "keywords": [
             "synchronization",
             "intermittent communication",
             "linear systems"
         ],
         "location": "Osaka, Japan",
-        "pages": "5569–5574",
+        "pages": "5569\u20135574",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/phillips.ea_.15.cdc_.pdf",
         "title": "Synchronization of two linear systems over intermittent communication networks",
         "type": "conference",
@@ -1727,8 +2815,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "Y. Li",
             "S. Phillips",
             "R. G. Sanfelice"
@@ -1737,13 +2824,12 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-cdc-2014",
-        "keywords":
-        [
+        "keywords": [
             "incremental stability",
             "hybrid systems"
         ],
         "location": "Los Angeles, CA",
-        "pages": "3089–3094",
+        "pages": "3089\u20133094",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/li.ea_.15.pdf",
         "title": "Results on incremental stability for a class of hybrid systems",
         "type": "conference",
@@ -1753,8 +2839,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "R. G. Sanfelice"
         ],
@@ -1762,14 +2847,13 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-acc-2013",
-        "keywords":
-        [
+        "keywords": [
             "desynchronization",
             "impulse-coupled oscillators",
             "asymptotic stability"
         ],
         "location": "Washington, DC",
-        "pages": "3272–3277",
+        "pages": "3272\u20133277",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/phillips.es_.13.acc_.pdf",
         "title": "Results on the asymptotic stability properties of desynchronization in impulse-coupled oscillators",
         "type": "conference",
@@ -1779,8 +2863,7 @@
     {
         "abstract": "",
         "arxiv": "",
-        "authors":
-        [
+        "authors": [
             "S. Phillips",
             "R. G. Sanfelice",
             "R. S. Erwin"
@@ -1789,18 +2872,46 @@
         "citation_count": null,
         "doi": "",
         "id": "conf-acc-2012",
-        "keywords":
-        [
+        "keywords": [
             "synchronization",
             "impulsive oscillators",
             "communication constraints"
         ],
         "location": "Montreal, QC, Canada",
-        "pages": "2443–2448",
+        "pages": "2443\u20132448",
         "pdf": "https://seanaphillipscom.wordpress.com/wp-content/uploads/2019/10/phillips.es_.12.acc_.pdf",
         "title": "On the synchronization of two impulsive oscillators under communication constraints",
         "type": "conference",
         "venue": "AACC American Control Conference",
         "year": 2012
+    },
+    {
+        "id": "conf-acc-2014",
+        "type": "conference",
+        "title": "A framework for modeling and analysis of dynamical properties of spiking neurons",
+        "authors": [
+            "S. Phillips",
+            "R. G. Sanfelice"
+        ],
+        "year": 2014,
+        "venue": "AACC American Control Conference",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "month": "July",
+        "location": "Portland, OR",
+        "pdf": "https://escholarship.org/content/qt5dg7x703/qt5dg7x703_noSplash_e6164fce7a1397ac1ecae6ec30ff5904.pdf",
+        "doi": "10.1109/ACC.2014.6859494",
+        "arxiv": "",
+        "citation_count": null,
+        "abstract": "",
+        "keywords": [
+            "hybrid systems",
+            "neurons",
+            "biological systems",
+            "stability",
+            "asymptotic stability"
+        ],
+        "bibtex": "@INPROCEEDINGS{6859494, author={Phillips, Sean and Sanfelice, Ricardo G.}, booktitle={2014 American Control Conference}, title={A framework for modeling and analysis of dynamical properties of spiking neurons}, year={2014}, volume={}, number={}, pages={1414-1419}, keywords={Neurons;Asymptotic stability;Lyapunov methods;Analytical models;Stability analysis;Robustness;Mathematical model;Hybrid systems;Stability of hybrid systems;Biological systems}, doi={10.1109/ACC.2014.6859494}}"
     }
 ]
