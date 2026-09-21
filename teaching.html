@@ -12,21 +12,21 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --navy: #0b0f1a;
-      --navy-mid: #111827;
-      --navy-light: #1a2236;
-      --slate: #8898b8;
-      --slate-light: #b4c2d8;
-      --accent: #4f87ff;
-      --accent-dim: #1e3a6e;
-      --white: #f4f6fb;
-      --white-dim: #d0d9ec;
-      --body-bg: #f0f2f7;
-      --text-primary: #0f1624;
-      --text-secondary: #4a5568;
-      --text-muted: #718096;
-      --border: rgba(255,255,255,0.08);
-      --border-light: rgba(0,0,0,0.07);
+      --navy: #2B2118;
+      --navy-mid: #372A20;
+      --navy-light: #42311F;
+      --slate: #B5A395;
+      --slate-light: #DCCFC2;
+      --accent: #C1592E;
+      --accent-dim: #5C3520;
+      --white: #F5EDE3;
+      --white-dim: #E4D5C7;
+      --body-bg: #FAF5EF;
+      --text-primary: #2B2118;
+      --text-secondary: #5A4B41;
+      --text-muted: #8A7A6D;
+      --border: rgba(245,237,227,0.10);
+      --border-light: rgba(43,33,24,0.08);
     }
 
     html { scroll-behavior: smooth; }
@@ -44,7 +44,7 @@
       position: fixed;
       top: 0; left: 0; right: 0;
       z-index: 100;
-      background: rgba(11,15,26,0.92);
+      background: rgba(43,33,24,0.92);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       display: flex;
@@ -94,15 +94,15 @@
       top: -150px; right: -150px;
       width: 500px; height: 500px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(79,135,255,0.07) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(193,89,46,0.07) 0%, transparent 70%);
       pointer-events: none;
     }
 
     .page-header-grid {
       position: absolute;
       inset: 0;
-      background-image: linear-gradient(rgba(79,135,255,0.03) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(79,135,255,0.03) 1px, transparent 1px);
+      background-image: linear-gradient(rgba(193,89,46,0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(193,89,46,0.03) 1px, transparent 1px);
       background-size: 60px 60px;
       pointer-events: none;
     }
@@ -255,7 +255,7 @@
       text-transform: uppercase;
       padding: 4px 10px;
       border-radius: 100px;
-      background: rgba(79,135,255,0.1);
+      background: rgba(193,89,46,0.1);
       color: var(--accent);
       white-space: nowrap;
       flex-shrink: 0;
@@ -304,11 +304,11 @@
       text-decoration: none;
       padding: 6px 12px;
       border-radius: 6px;
-      border: 1px solid rgba(79,135,255,0.25);
-      background: rgba(79,135,255,0.05);
+      border: 1px solid rgba(193,89,46,0.25);
+      background: rgba(193,89,46,0.05);
       transition: background 0.15s;
     }
-    .course-link:hover { background: rgba(79,135,255,0.12); }
+    .course-link:hover { background: rgba(193,89,46,0.12); }
 
     .course-link.disabled {
       color: var(--text-muted);
@@ -384,7 +384,7 @@
       top: -100px; right: -100px;
       width: 320px; height: 320px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(79,135,255,0.1) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(193,89,46,0.1) 0%, transparent 70%);
       pointer-events: none;
     }
     .philosophy-callout h3 {
@@ -439,9 +439,10 @@
       <li><a href="index.html#research">Research</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="teaching.html" class="active">Teaching</a></li>
+      <li><a href="index.html#education">Education</a></li>
       <li><a href="index.html#awards">Awards</a></li>
       <li><a href="index.html#contact">Contact</a></li>
-      <li><a href="#" style="color:var(--accent)">CV ↗</a></li>
+      <li><a href="media/cv/Sean_Phillips_CV.pdf" target="_blank" rel="noopener" style="color:var(--accent)">CV ↗</a></li>
     </ul>
   </nav>
 
@@ -585,7 +586,7 @@
     <div class="footer-logo">Sean Phillips, Ph.D.</div>
     <div class="footer-links">
       <a href="https://scholar.google.com/citations?user=n94W3HUAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
-      <a href="#">CV ↗</a>
+      <a href="media/cv/Sean_Phillips_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
       <a href="index.html#contact">Contact</a>
     </div>
   </footer>

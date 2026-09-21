@@ -7,26 +7,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --navy: #0b0f1a;
-      --navy-mid: #111827;
-      --navy-light: #1a2236;
-      --slate: #8898b8;
-      --slate-light: #b4c2d8;
-      --accent: #4f87ff;
-      --accent-dim: #1e3a6e;
-      --white: #f4f6fb;
-      --white-dim: #d0d9ec;
-      --body-bg: #f0f2f7;
-      --text-primary: #0f1624;
-      --text-secondary: #4a5568;
-      --text-muted: #718096;
-      --border: rgba(255,255,255,0.08);
-      --border-light: rgba(0,0,0,0.07);
+      --navy: #2B2118;
+      --navy-mid: #372A20;
+      --navy-light: #42311F;
+      --slate: #B5A395;
+      --slate-light: #DCCFC2;
+      --accent: #C1592E;
+      --accent-dim: #5C3520;
+      --white: #F5EDE3;
+      --white-dim: #E4D5C7;
+      --body-bg: #FAF5EF;
+      --text-primary: #2B2118;
+      --text-secondary: #5A4B41;
+      --text-muted: #8A7A6D;
+      --border: rgba(245,237,227,0.10);
+      --border-light: rgba(43,33,24,0.08);
     }
 
     html { scroll-behavior: smooth; }
@@ -44,7 +43,7 @@
       position: fixed;
       top: 0; left: 0; right: 0;
       z-index: 100;
-      background: rgba(11,15,26,0.92);
+      background: rgba(43,33,24,0.92);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       display: flex;
@@ -93,15 +92,15 @@
       top: -150px; right: -150px;
       width: 500px; height: 500px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(79,135,255,0.07) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(193,89,46,0.07) 0%, transparent 70%);
       pointer-events: none;
     }
 
     .page-header-grid {
       position: absolute;
       inset: 0;
-      background-image: linear-gradient(rgba(79,135,255,0.03) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(79,135,255,0.03) 1px, transparent 1px);
+      background-image: linear-gradient(rgba(193,89,46,0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(193,89,46,0.03) 1px, transparent 1px);
       background-size: 60px 60px;
       pointer-events: none;
     }
@@ -254,7 +253,7 @@
     }
     .search-input:focus {
       border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(79,135,255,0.1);
+      box-shadow: 0 0 0 3px rgba(193,89,46,0.1);
     }
     .search-input::placeholder { color: var(--text-muted); }
 
@@ -311,6 +310,11 @@
       transform: translateY(-1px);
     }
 
+    .pub-item:target {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(193,89,46,0.15);
+    }
+
     .pub-main {
       display: grid;
       grid-template-columns: 72px 1fr auto;
@@ -345,10 +349,11 @@
       margin-top: 6px;
       white-space: nowrap;
     }
-    .badge-journal    { background: rgba(79,135,255,0.12); color: #3b72e8; }
+    .badge-journal    { background: rgba(193,89,46,0.12); color: #9A4526; }
     .badge-conference { background: rgba(16,185,129,0.12); color: #059669; }
     .badge-book_chapter { background: rgba(139,92,246,0.12); color: #7c3aed; }
     .badge-thesis     { background: rgba(107,114,128,0.12); color: #4b5563; }
+    .badge-preprint   { background: rgba(217,119,6,0.12); color: #b45309; }
 
     .pub-body {
       flex: 1;
@@ -414,8 +419,8 @@
     .link-pdf    { color: #dc2626; border-color: rgba(220,38,38,0.25); background: rgba(220,38,38,0.05); }
     .link-pdf:hover { background: rgba(220,38,38,0.12); }
 
-    .link-doi    { color: #2563eb; border-color: rgba(37,99,235,0.25); background: rgba(37,99,235,0.05); }
-    .link-doi:hover { background: rgba(37,99,235,0.12); }
+    .link-doi    { color: #3E6E64; border-color: rgba(62,110,100,0.25); background: rgba(62,110,100,0.05); }
+    .link-doi:hover { background: rgba(62,110,100,0.12); }
 
     .link-arxiv  { color: #b45309; border-color: rgba(180,83,9,0.25); background: rgba(180,83,9,0.05); }
     .link-arxiv:hover { background: rgba(180,83,9,0.12); }
@@ -423,8 +428,8 @@
     .link-cite   { color: var(--text-secondary); border-color: var(--border-light); background: transparent; }
     .link-cite:hover { background: var(--body-bg); }
 
-    .link-abstract { color: var(--accent); border-color: rgba(79,135,255,0.25); background: rgba(79,135,255,0.05); }
-    .link-abstract:hover { background: rgba(79,135,255,0.12); }
+    .link-abstract { color: var(--accent); border-color: rgba(193,89,46,0.25); background: rgba(193,89,46,0.05); }
+    .link-abstract:hover { background: rgba(193,89,46,0.12); }
 
     .cite-count {
       font-size: 11px;
@@ -524,7 +529,7 @@
 
     .modal-bibtex {
       background: var(--navy);
-      color: #a8b8d8;
+      color: #D9C9BA;
       font-family: 'Courier New', monospace;
       font-size: 12px;
       line-height: 1.7;
@@ -654,9 +659,10 @@
       <li><a href="index.html#research">Research</a></li>
       <li><a href="publications.html" class="active">Publications</a></li>
       <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="index.html#education">Education</a></li>
       <li><a href="index.html#awards">Awards</a></li>
       <li><a href="index.html#contact">Contact</a></li>
-      <li><a href="#" style="color:var(--accent)">CV ↗</a></li>
+      <li><a href="media/cv/Sean_Phillips_CV.pdf" target="_blank" rel="noopener" style="color:var(--accent)">CV ↗</a></li>
     </ul>
   </nav>
 
@@ -700,6 +706,7 @@
             <button class="filter-btn active" data-type="all">All</button>
             <button class="filter-btn" data-type="journal">Journal</button>
             <button class="filter-btn" data-type="conference">Conference</button>
+            <button class="filter-btn" data-type="preprint">Preprint</button>
             <button class="filter-btn" data-type="book_chapter">Book Chapter</button>
             <button class="filter-btn" data-type="thesis">Thesis</button>
           </div>
@@ -755,7 +762,7 @@
     <div class="footer-logo">Sean Phillips, Ph.D.</div>
     <div class="footer-links">
       <a href="https://scholar.google.com/citations?user=n94W3HUAAAAJ" target="_blank">Google Scholar ↗</a>
-      <a href="#">CV ↗</a>
+      <a href="media/cv/Sean_Phillips_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
       <a href="index.html#contact">Contact</a>
     </div>
   </footer>
@@ -787,6 +794,19 @@
       updateStats();
       render();
       bindEvents();
+      openDeepLinkedPub();
+    }
+
+    // If arriving via a link like publications.html#thesis-phd, auto-expand
+    // that entry so the visitor doesn't just land on a collapsed row.
+    function openDeepLinkedPub() {
+      const id = decodeURIComponent(location.hash.replace('#', ''));
+      if (!id) return;
+      const el = document.getElementById(id);
+      if (el && el.classList.contains('pub-item')) {
+        el.classList.add('expanded');
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'center' }), 50);
+      }
     }
 
     // ─── BUILD YEAR FILTERS ───────────────────────────────────────────────────
@@ -862,8 +882,8 @@
       // Group by type when showing all, otherwise flat list
       let html = '';
       if (activeType === 'all' && !searchQuery) {
-        const order = ['journal','conference','book_chapter','thesis'];
-        const labels = { journal: 'Journal Articles', conference: 'Conference Papers', book_chapter: 'Book Chapters', thesis: 'Theses & Dissertations' };
+        const order = ['journal','conference','preprint','book_chapter','thesis'];
+        const labels = { journal: 'Journal Articles', conference: 'Conference Papers', preprint: 'Preprints', book_chapter: 'Book Chapters', thesis: 'Theses & Dissertations' };
         order.forEach(type => {
           const group = pubs.filter(p => p.type === type);
           if (group.length === 0) return;
@@ -897,7 +917,7 @@
     // ─── RENDER ONE PUB ───────────────────────────────────────────────────────
     function renderPub(p) {
       const badgeClass = `badge-${p.type}`;
-      const badgeLabels = { journal: 'Journal', conference: 'Conference', book_chapter: 'Book Chapter', thesis: 'Thesis' };
+      const badgeLabels = { journal: 'Journal', conference: 'Conf', preprint: 'Preprint', book_chapter: 'Book Ch.', thesis: 'Thesis' };
 
       // Authors — bold S. Phillips
       const authorsHtml = p.authors.map(a =>
@@ -934,7 +954,7 @@
       const hasPanel = p.abstract || (p.keywords && p.keywords.length > 0);
 
       return `
-      <div class="pub-item" data-id="${p.id}">
+      <div class="pub-item" id="${p.id}" data-id="${p.id}">
         <div class="pub-main">
           <div class="pub-year-col">
             <span class="pub-year">${p.year}</span>
