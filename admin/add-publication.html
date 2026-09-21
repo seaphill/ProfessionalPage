@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publication Manager — Sean Phillips</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #2B2118;
+    --accent: #C1592E;
+    --body-bg: #FAF5EF;
+    --text-primary: #2B2118;
+    --text-secondary: #5A4B41;
+    --text-muted: #8A7A6D;
+    --border: rgba(0,0,0,0.08);
+    --ok: #059669;
+    --err: #dc2626;
+  }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--body-bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding-bottom: 80px;
+  }
+  header {
+    background: var(--navy);
+    color: #F5EDE3;
+    padding: 28px 32px;
+  }
+  header h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  header p {
+    font-size: 13px;
+    color: #DCCFC2;
+    margin-top: 6px;
+    max-width: 640px;
+  }
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+  .panel {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  .panel h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .panel .hint {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    line-height: 1.55;
+  }
+  .step-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    margin-right: 8px;
+  }
+  .file-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  input[type="file"] {
+    font-size: 13px;
+  }
+  #load-status {
+    font-size: 12.5px;
+    font-weight: 500;
+  }
+  #load-status.ok { color: var(--ok); }
+  #load-status.err { color: var(--err); }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
+  .field label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .field label .req { color: var(--err); }
+  .field input, .field select, .field textarea {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--body-bg);
+    color: var(--text-primary);
+    outline: none;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(193,89,46,0.12);
+  }
+  .field textarea { resize: vertical; min-height: 70px; font-family: monospace; font-size: 12.5px; }
+  .field .fine { font-size: 11px; color: var(--text-muted); }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s, background 0.15s;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: #D97A52; transform: translateY(-1px); }
+  .btn-secondary { background: var(--navy); color: #fff; }
+  .btn-secondary:hover { transform: translateY(-1px); }
+  .btn-ghost { background: transparent; color: var(--text-secondary); border: 1px solid var(--border); }
+  .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+  .btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none !important; }
+
+  .msg {
+    font-size: 12.5px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: none;
+  }
+  .msg.show { display: block; }
+  .msg.err { background: rgba(220,38,38,0.08); color: var(--err); border: 1px solid rgba(220,38,38,0.2); }
+  .msg.ok { background: rgba(5,150,105,0.08); color: var(--ok); border: 1px solid rgba(5,150,105,0.2); }
+
+  .queue-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    background: var(--body-bg);
+  }
+  .queue-item .meta { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .queue-item .title { font-size: 13.5px; font-weight: 600; }
+  .queue-item button {
+    background: none;
+    border: none;
+    color: var(--err);
+    font-size: 12px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .empty-note { font-size: 13px; color: var(--text-muted); padding: 8px 0; }
+  .count-pill {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    background: rgba(193,89,46,0.12);
+    color: var(--accent);
+    padding: 2px 9px;
+    border-radius: 100px;
+    margin-left: 6px;
+  }
+  .actions-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+  details summary { cursor: pointer; font-size: 12.5px; color: var(--accent); margin-top: 6px; }
+  pre#json-preview {
+    background: var(--navy);
+    color: #E4D5C7;
+    font-size: 11.5px;
+    padding: 14px;
+    border-radius: 8px;
+    overflow-x: auto;
+    max-height: 300px;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Publication Manager</h1>
+  <p>A local editing tool for publications.json — nothing here is uploaded anywhere. It stays private on this machine. Load your current file, add entries with a form instead of hand-editing JSON, then download the merged file and commit it like any other change.</p>
+</header>
+
+<div class="wrap">
+
+  <div class="panel">
+    <h2><span class="step-badge">1</span>Load the current publications.json</h2>
+    <div class="hint">Select the <code>publications.json</code> file from the project root. It's read locally in your browser — it is never sent anywhere.</div>
+    <div class="file-row">
+      <input type="file" id="load-json" accept="application/json,.json">
+      <span id="load-status"></span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2><span class="step-badge">2</span>Add a publication</h2>
+    <div class="hint">Fields marked <span style="color:var(--err)">*</span> are required. This mirrors the schema in <code>publications_field_reference.md</code> — new entries are placed at the top of the list, matching that file's convention.</div>
+
+    <form id="pub-form">
+      <div class="grid3">
+        <div class="field">
+          <label>Type <span class="req">*</span></label>
+          <select id="f-type" required>
+            <option value="">Select…</option>
+            <option value="journal">Journal</option>
+            <option value="conference">Conference</option>
+            <option value="preprint">Preprint</option>
+            <option value="book_chapter">Book Chapter</option>
+            <option value="thesis">Thesis</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Year <span class="req">*</span></label>
+          <input type="number" id="f-year" placeholder="2025" required>
+        </div>
+        <div class="field">
+          <label>ID <span class="req">*</span></label>
+          <input type="text" id="f-id" placeholder="auto-generated, editable">
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Title <span class="req">*</span></label>
+        <input type="text" id="f-title" placeholder="Full publication title" required>
+      </div>
+
+      <div class="field">
+        <label>Authors <span class="req">*</span></label>
+        <input type="text" id="f-authors" placeholder="S. Phillips, R. G. Sanfelice" required>
+        <span class="fine">Comma-separated, in author order. "S. Phillips" is auto-bolded on the site.</span>
+      </div>
+
+      <div class="field">
+        <label>Venue <span class="req">*</span></label>
+        <input type="text" id="f-venue" placeholder="IEEE Transactions on Automatic Control">
+      </div>
+
+      <div class="grid3">
+        <div class="field"><label>Volume</label><input type="text" id="f-volume"></div>
+        <div class="field"><label>Issue</label><input type="text" id="f-issue"></div>
+        <div class="field"><label>Pages</label><input type="text" id="f-pages" placeholder="973–988"></div>
+      </div>
+
+      <div class="grid2">
+        <div class="field"><label>Month</label><input type="text" id="f-month" placeholder="July"></div>
+        <div class="field"><label>Location (conference only)</label><input type="text" id="f-location" placeholder="Cancun, Mexico"></div>
+      </div>
+
+      <div class="grid2">
+        <div class="field"><label>PDF URL</label><input type="url" id="f-pdf" placeholder="https://…"></div>
+        <div class="field"><label>DOI (bare, not full URL)</label><input type="text" id="f-doi" placeholder="10.1109/TAC.2017.2748519"></div>
+      </div>
+
+      <div class="grid2">
+        <div class="field"><label>arXiv URL</label><input type="url" id="f-arxiv" placeholder="https://arxiv.org/abs/…"></div>
+        <div class="field"><label>Citation count</label><input type="number" id="f-citations" placeholder="leave blank if unknown"></div>
+      </div>
+
+      <div class="field">
+        <label>Keywords</label>
+        <input type="text" id="f-keywords" placeholder="hybrid systems, robust control, multi-agent systems">
+        <span class="fine">Comma-separated, lowercase, consistent across entries — used by the site's keyword search.</span>
+      </div>
+
+      <div class="field">
+        <label>Abstract</label>
+        <textarea id="f-abstract" style="font-family:'DM Sans',sans-serif; font-size:13px;"></textarea>
+      </div>
+
+      <div class="field">
+        <label>BibTeX</label>
+        <textarea id="f-bibtex" placeholder="@article{...}"></textarea>
+      </div>
+
+      <div class="msg err" id="form-error"></div>
+      <button type="submit" class="btn btn-primary">Add to queue ↓</button>
+    </form>
+  </div>
+
+  <div class="panel">
+    <h2><span class="step-badge">3</span>Review &amp; download<span class="count-pill" id="queue-count">0 queued</span></h2>
+    <div class="hint">New entries queued this session, shown newest-first. Remove any you want to discard before downloading.</div>
+    <div id="queue-list"><div class="empty-note">No entries queued yet — add one above.</div></div>
+
+    <div class="actions-row">
+      <button class="btn btn-secondary" id="btn-download" disabled>Download updated publications.json</button>
+      <button class="btn btn-ghost" id="btn-copy" disabled>Copy queued entries as JSON</button>
+    </div>
+    <div class="msg ok" id="download-msg">Downloaded. Replace publications.json in the project with this file, then commit as usual.</div>
+
+    <details>
+      <summary>Preview merged JSON</summary>
+      <pre id="json-preview">[]</pre>
+    </details>
+  </div>
+
+</div>
+
+<script>
+  let existingPubs = null; // null until a file is loaded
+  let queued = []; // newest-first, prepended to existing on export
+
+  const loadInput = document.getElementById('load-json');
+  const loadStatus = document.getElementById('load-status');
+
+  loadInput.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const data = JSON.parse(reader.result);
+        if (!Array.isArray(data)) throw new Error('Expected a JSON array of publications.');
+        existingPubs = data;
+        loadStatus.textContent = `Loaded ${data.length} existing publications.`;
+        loadStatus.className = 'ok';
+        updatePreview();
+        updateButtons();
+      } catch (err) {
+        existingPubs = null;
+        loadStatus.textContent = 'Could not parse that file as JSON: ' + err.message;
+        loadStatus.className = 'err';
+        updateButtons();
+      }
+    };
+    reader.readAsText(file);
+  });
+
+  function slugify(str) {
+    return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '').slice(0, 40);
+  }
+
+  // Auto-suggest an id as type/year/title are filled in, unless the user
+  // has already typed their own id.
+  let idTouched = false;
+  document.getElementById('f-id').addEventListener('input', () => { idTouched = true; });
+  function suggestId() {
+    if (idTouched) return;
+    const type = document.getElementById('f-type').value;
+    const year = document.getElementById('f-year').value;
+    const title = document.getElementById('f-title').value;
+    if (!type || !year || !title) return;
+    const typeAbbr = { journal: 'journal', conference: 'conf', preprint: 'preprint', book_chapter: 'chapter', thesis: 'thesis' }[type] || type;
+    document.getElementById('f-id').value = `${typeAbbr}-${year}-${slugify(title).split('-').slice(0, 4).join('-')}`;
+  }
+  ['f-type', 'f-year', 'f-title'].forEach(id => {
+    document.getElementById(id).addEventListener('input', suggestId);
+    document.getElementById(id).addEventListener('change', suggestId);
+  });
+
+  const form = document.getElementById('pub-form');
+  const formError = document.getElementById('form-error');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formError.classList.remove('show');
+
+    const type = document.getElementById('f-type').value;
+    const year = parseInt(document.getElementById('f-year').value, 10);
+    const id = document.getElementById('f-id').value.trim();
+    const title = document.getElementById('f-title').value.trim();
+    const authorsRaw = document.getElementById('f-authors').value.trim();
+
+    if (!type || !year || !id || !title || !authorsRaw) {
+      formError.textContent = 'Type, year, ID, title, and authors are all required.';
+      formError.classList.add('show');
+      return;
+    }
+
+    const allIds = [...(existingPubs || []).map(p => p.id), ...queued.map(p => p.id)];
+    if (allIds.includes(id)) {
+      formError.textContent = `ID "${id}" is already in use — IDs must be unique. Edit the ID field above.`;
+      formError.classList.add('show');
+      return;
+    }
+
+    const citationsRaw = document.getElementById('f-citations').value.trim();
+
+    const entry = {
+      id,
+      type,
+      title,
+      authors: authorsRaw.split(',').map(a => a.trim()).filter(Boolean),
+      year,
+      venue: document.getElementById('f-venue').value.trim(),
+      volume: document.getElementById('f-volume').value.trim(),
+      issue: document.getElementById('f-issue').value.trim(),
+      pages: document.getElementById('f-pages').value.trim(),
+      month: document.getElementById('f-month').value.trim(),
+      location: document.getElementById('f-location').value.trim(),
+      pdf: document.getElementById('f-pdf').value.trim(),
+      doi: document.getElementById('f-doi').value.trim(),
+      arxiv: document.getElementById('f-arxiv').value.trim(),
+      citation_count: citationsRaw === '' ? null : parseInt(citationsRaw, 10),
+      abstract: document.getElementById('f-abstract').value.trim(),
+      keywords: document.getElementById('f-keywords').value.split(',').map(k => k.trim()).filter(Boolean),
+      bibtex: document.getElementById('f-bibtex').value.trim()
+    };
+
+    queued.unshift(entry);
+    form.reset();
+    idTouched = false;
+    renderQueue();
+    updateButtons();
+    updatePreview();
+  });
+
+  function renderQueue() {
+    const list = document.getElementById('queue-list');
+    document.getElementById('queue-count').textContent = `${queued.length} queued`;
+    if (queued.length === 0) {
+      list.innerHTML = '<div class="empty-note">No entries queued yet — add one above.</div>';
+      return;
+    }
+    list.innerHTML = queued.map((p, i) => `
+      <div class="queue-item">
+        <div>
+          <div class="title">${p.title}</div>
+          <div class="meta">${p.year} · ${p.type} · ${p.authors.join(', ')}</div>
+        </div>
+        <button data-idx="${i}" class="remove-btn">Remove</button>
+      </div>
+    `).join('');
+    list.querySelectorAll('.remove-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        queued.splice(parseInt(btn.dataset.idx, 10), 1);
+        renderQueue();
+        updateButtons();
+        updatePreview();
+      });
+    });
+  }
+
+  function updateButtons() {
+    const ready = existingPubs !== null && queued.length > 0;
+    document.getElementById('btn-download').disabled = !ready;
+    document.getElementById('btn-copy').disabled = queued.length === 0;
+  }
+
+  function mergedList() {
+    return [...queued, ...(existingPubs || [])];
+  }
+
+  function updatePreview() {
+    document.getElementById('json-preview').textContent = JSON.stringify(mergedList(), null, 4);
+  }
+
+  document.getElementById('btn-download').addEventListener('click', () => {
+    const blob = new Blob([JSON.stringify(mergedList(), null, 4)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'publications.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    const msg = document.getElementById('download-msg');
+    msg.classList.add('show');
+    setTimeout(() => msg.classList.remove('show'), 6000);
+  });
+
+  document.getElementById('btn-copy').addEventListener('click', async () => {
+    const text = JSON.stringify(queued, null, 4);
+    try {
+      await navigator.clipboard.writeText(text);
+      const btn = document.getElementById('btn-copy');
+      const original = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(() => { btn.textContent = original; }, 1500);
+    } catch (e) {
+      alert('Could not copy automatically. Open "Preview merged JSON" below and copy manually.');
+    }
+  });
+</script>
+
+</body>
+</html>
