@@ -19,7 +19,7 @@
         "month": "",
         "location": "",
         "pdf": "",
-        "doi": "",
+        "doi": "10.1109/tnse.2026.3682565",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -28,7 +28,7 @@
             "curvature",
             "network science"
         ],
-        "bibtex": ""
+        "bibtex": "@article{Grange_2026, title={Curvature on Graphs With Negative Edge Weights}, volume={13}, ISSN={2334-329X}, url={http://dx.doi.org/10.1109/tnse.2026.3682565}, DOI={10.1109/tnse.2026.3682565}, journal={IEEE Transactions on Network Science and Engineering}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Grange, Daniel and Sun, Yifan and Weistuch, Corey and Elkin, Rena and Phillips, Sean and Deasy, Joseph O. and Georgiou, Tryphon T.}, year={2026}, pages={9205\u20139222} }"
     },
     {
         "id": "journal-jgcd-2025-rpo-safety-under-review",
@@ -140,7 +140,7 @@
         "month": "",
         "location": "",
         "pdf": "",
-        "doi": "",
+        "doi": "10.1109/lcsys.2023.3331834",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -149,7 +149,7 @@
             "filtering",
             "riemannian manifolds"
         ],
-        "bibtex": ""
+        "bibtex": "@article{Grange_2023, title={Computational Optimal Transport and Filtering on Riemannian Manifolds}, volume={7}, ISSN={2475-1456}, url={http://dx.doi.org/10.1109/lcsys.2023.3331834}, DOI={10.1109/lcsys.2023.3331834}, journal={IEEE Control Systems Letters}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Grange, Daniel and Al-Jarrah, Mohammad and Baptista, Ricardo and Taghvaei, Amirhossein and Georgiou, Tryphon T. and Phillips, Sean and Tannenbaum, Allen}, year={2023}, pages={3495\u20133500} }"
     },
     {
         "id": "journal-jgcd-2023-underactuated-hybrid",
@@ -164,10 +164,10 @@
         "volume": "46",
         "issue": "10",
         "pages": "1901-1918",
-        "month": "",
+        "month": "October",
         "location": "",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/1.g006813",
         "arxiv": "",
         "citation_count": null,
         "abstract": "2023 AFRL/RV Publication of the Year Team Award.",
@@ -177,7 +177,7 @@
             "docking",
             "underactuated satellite"
         ],
-        "bibtex": ""
+        "bibtex": "@article{Soderlund_2023, title={Hybrid Systems Approach to Autonomous Rendezvous and Docking of an Underactuated Satellite}, volume={46}, ISSN={1533-3884}, url={http://dx.doi.org/10.2514/1.g006813}, DOI={10.2514/1.g006813}, number={10}, journal={Journal of Guidance, Control, and Dynamics}, publisher={American Institute of Aeronautics and Astronautics (AIAA)}, author={Soderlund, Alexander A. and Phillips, Sean}, year={2023}, month=Oct, pages={1901\u20131918} }"
     },
     {
         "id": "journal-jsr-2024-dqn-inspection",
@@ -194,11 +194,11 @@
         "venue": "AIAA Journal of Spacecraft and Robotics",
         "volume": "61",
         "issue": "2",
-        "pages": "",
-        "month": "",
+        "pages": "341\u2013354",
+        "month": "March",
         "location": "",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/1.a35749",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -207,7 +207,7 @@
             "multi-agent inspection",
             "tumbling target"
         ],
-        "bibtex": ""
+        "bibtex": "@article{Aurand_2024, title={Deep Q-Learning for Decentralized Multi-Agent Inspection of a Tumbling Target}, volume={61}, ISSN={1533-6794}, url={http://dx.doi.org/10.2514/1.a35749}, DOI={10.2514/1.a35749}, number={2}, journal={Journal of Spacecraft and Rockets}, publisher={American Institute of Aeronautics and Astronautics (AIAA)}, author={Aurand, Joshua and Cutlip, Steven and Lei, Henry and Lang, Kendra and Phillips, Sean}, year={2024}, month=Mar, pages={341\u2013354} }"
     },
     {
         "id": "journal-tcst-2024-run-time-assurance",
@@ -229,10 +229,10 @@
         "volume": "32",
         "issue": "3",
         "pages": "862-873",
-        "month": "",
+        "month": "May",
         "location": "",
         "pdf": "",
-        "doi": "",
+        "doi": "10.1109/tcst.2023.3340624",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -241,7 +241,7 @@
             "attitude control",
             "spacecraft"
         ],
-        "bibtex": ""
+        "bibtex": "@article{Abate_2024, title={Run Time Assurance for Spacecraft Attitude Control Under Nondeterministic Assumptions}, volume={32}, ISSN={2374-0159}, url={http://dx.doi.org/10.1109/tcst.2023.3340624}, DOI={10.1109/tcst.2023.3340624}, number={3}, journal={IEEE Transactions on Control Systems Technology}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Abate, Matthew and Mote, Mark and Dor, Mehregan and Klett, Corbin and Phillips, Sean and Lang, Kendra and Tsiotras, Panagiotis and Feron, Eric and Coogan, Samuel}, year={2024}, month=May, pages={862\u2013873} }"
     },
     {
         "id": "journal-jgcd-2024-angles-only-catalog",
@@ -259,10 +259,10 @@
         "volume": "47",
         "issue": "12",
         "pages": "2573-2586",
-        "month": "",
+        "month": "December",
         "location": "",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/1.g008280",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -271,7 +271,7 @@
             "close-proximity operations",
             "angles-only navigation"
         ],
-        "bibtex": ""
+        "bibtex": "@article{Hays_2024, title={Angles-Only Cooperative Local Catalog Maintenance of Close-Proximity Satellite Systems}, volume={47}, ISSN={1533-3884}, url={http://dx.doi.org/10.2514/1.g008280}, DOI={10.2514/1.g008280}, number={12}, journal={Journal of Guidance, Control, and Dynamics}, publisher={American Institute of Aeronautics and Astronautics (AIAA)}, author={Hays, Christopher W. and Henderson, Troy and Miller, Kristina and Phillips, Sean and Soderlund, Alexander}, year={2024}, month=Dec, pages={2573\u20132586} }"
     },
     {
         "id": "journal-jgcd-2023-trajectory-synthesis",
@@ -290,10 +290,10 @@
         "volume": "46",
         "issue": "12",
         "pages": "2245-2264",
-        "month": "",
+        "month": "December",
         "location": "",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/1.g007127",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -302,7 +302,7 @@
             "spacecraft inspection",
             "safety guarantees"
         ],
-        "bibtex": ""
+        "bibtex": "@article{Hibbard_2023, title={Trajectory Synthesis for the Coordinated Inspection of a Spacecraft with Safety Guarantees}, volume={46}, ISSN={1533-3884}, url={http://dx.doi.org/10.2514/1.g007127}, DOI={10.2514/1.g007127}, number={12}, journal={Journal of Guidance, Control, and Dynamics}, publisher={American Institute of Aeronautics and Astronautics (AIAA)}, author={Hibbard, Michael and Cubuktepe, Murat and Shubert, Matthew and Lang, Kendra and Topcu, Ufuk and Phillips, Sean}, year={2023}, month=Dec, pages={2245\u20132264} }"
     },
     {
         "id": "book-cps-2026-event-driven",
@@ -317,11 +317,11 @@
         "venue": "Smarter Cyber-Physical Systems: Enabling Methodologies and Applications (Y. Wan, K. Vamvoudakis, Y. Chen, F. Lewis, eds.), Springer",
         "volume": "",
         "issue": "",
-        "pages": "",
-        "month": "",
+        "pages": "157\u2013195",
+        "month": "June",
         "location": "",
         "pdf": "",
-        "doi": "",
+        "doi": "10.1201/9781003243731-7",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -329,7 +329,7 @@
             "cyber-physical systems",
             "event-driven control"
         ],
-        "bibtex": ""
+        "bibtex": "@inbook{Zegers_2025, title={Event-Driven Distributed Cyber-Physical Systems}, ISBN={9781003243731}, url={http://dx.doi.org/10.1201/9781003243731-7}, DOI={10.1201/9781003243731-7}, booktitle={Smarter Cyber Physical Systems}, publisher={CRC Press}, author={Zegers, Federico M. and Phillips, Sean and Dixon, Warren E.}, year={2025}, month=June, pages={157\u2013195} }"
     },
     {
         "id": "conf-aas-2026-mpc-inspection",
@@ -349,7 +349,7 @@
         "location": "Whistler, CAN",
         "pdf": "",
         "doi": "",
-        "arxiv": "",
+        "arxiv": "https://arxiv.org/abs/2608.07765",
         "citation_count": null,
         "abstract": "",
         "keywords": [
@@ -403,10 +403,10 @@
         "volume": "8",
         "issue": "1",
         "pages": "97-104",
-        "month": "",
+        "month": "May",
         "location": "Burlingame, CA",
         "pdf": "",
-        "doi": "",
+        "doi": "10.1609/aaaiss.v8i1.42523",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -414,7 +414,7 @@
             "multi-agent systems",
             "task allocation"
         ],
-        "bibtex": ""
+        "bibtex": "@article{Reid_2026, title={A Decentralized Framework for Resource-Constrained Task Redistribution}, volume={8}, ISSN={2994-4317}, url={http://dx.doi.org/10.1609/aaaiss.v8i1.42523}, DOI={10.1609/aaaiss.v8i1.42523}, number={1}, journal={Proceedings of the AAAI Symposium Series}, publisher={Association for the Advancement of Artificial Intelligence (AAAI)}, author={Reid, Doron and Reliford, Anaiya and Andy, Anietie and Smith, Sonya T. and Alfred, Marcus and Phillips, Sean}, year={2026}, month=May, pages={97\u2013104} }"
     },
     {
         "id": "conf-gnc-2026-blender-imagery",
@@ -489,10 +489,10 @@
         "volume": "",
         "issue": "",
         "pages": "",
-        "month": "",
+        "month": "January",
         "location": "Orlando, FL",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/6.2026-0349",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -500,7 +500,7 @@
             "trusted autonomy",
             "satellite autonomy"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Ludwig_2026, title={An Architecture for Trusted Long-Duration Satellite Autonomy}, url={http://dx.doi.org/10.2514/6.2026-0349}, DOI={10.2514/6.2026-0349}, booktitle={AIAA SCITECH 2026 Forum}, publisher={American Institute of Aeronautics and Astronautics}, author={Ludwig, Jeremy and Tuohy, Daniel and Schaub, Hanspeter and Cheval, Anais and Phillips, Sean and Miller, Kristina}, year={2026}, month=Jan }"
     },
     {
         "id": "conf-nato-2026-hybrid-architecture",
@@ -545,10 +545,10 @@
         "volume": "",
         "issue": "",
         "pages": "",
-        "month": "",
+        "month": "January",
         "location": "Orlando, FL",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/6.2026-0135",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -557,7 +557,7 @@
             "task scheduling",
             "leo constellation"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Reliford_2026, title={Autonomous Task Rescheduling in a Heterogeneous LEO Satellite Constellation Using Reinforcement Learning}, url={http://dx.doi.org/10.2514/6.2026-0135}, DOI={10.2514/6.2026-0135}, booktitle={AIAA SCITECH 2026 Forum}, publisher={American Institute of Aeronautics and Astronautics}, author={Reliford, Anaiya and Reid, Doron and Smith, Sonya T. and Andy, Anietie and Alfred, Marcus and Phillips, Sean}, year={2026}, month=Jan }"
     },
     {
         "id": "conf-mfi-2025-gmm-fusion",
@@ -574,11 +574,11 @@
         "venue": "IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI)",
         "volume": "",
         "issue": "",
-        "pages": "",
-        "month": "",
+        "pages": "1\u20136",
+        "month": "September",
         "location": "College Station, TX",
         "pdf": "",
-        "doi": "",
+        "doi": "10.1109/mfi67357.2025.11259237",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -587,7 +587,7 @@
             "gaussian mixture models",
             "decentralized networks"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Paranjape_2025, title={Gaussian Mixture Model Fusion Across Decentralized Sensor Networks}, url={http://dx.doi.org/10.1109/mfi67357.2025.11259237}, DOI={10.1109/mfi67357.2025.11259237}, booktitle={2025 IEEE International Conference on Multisensor Fusion and Integration for Intelligent Systems (MFI)}, publisher={IEEE}, author={Paranjape, Ishan and Murray-Krezan, Jeremy and Phillips, Sean and Chakravorty, Suman and Hussein, Islam}, year={2025}, month=Sept, pages={1\u20136} }"
     },
     {
         "id": "conf-sfm-2025-autonomy-levels",
@@ -607,7 +607,7 @@
         "location": "Kaua'i, HI",
         "pdf": "",
         "doi": "",
-        "arxiv": "",
+        "arxiv": "https://arxiv.org/abs/2503.01049",
         "citation_count": null,
         "abstract": "",
         "keywords": [
@@ -693,10 +693,10 @@
         "volume": "",
         "issue": "",
         "pages": "",
-        "month": "",
+        "month": "January",
         "location": "Orlando, FL",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/6.2025-0757",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -704,7 +704,7 @@
             "information fusion",
             "sensor tasking"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Jose_2025, title={Optimizing Potential Information Gain From Satellites Over Space and Time for Heterogeneous Information Fusion}, url={http://dx.doi.org/10.2514/6.2025-0757}, DOI={10.2514/6.2025-0757}, booktitle={AIAA SCITECH 2025 Forum}, publisher={American Institute of Aeronautics and Astronautics}, author={Jose, Esther and Batta, Rajan and Sudit, Moises and Sudit, David and Crassidis, John L. and Nebelecky, Christopher and Phillips, Sean and Soderlund, Alexander}, year={2025}, month=Jan }"
     },
     {
         "id": "conf-scitech-2025-rl-rta-uav-inspection",
@@ -723,10 +723,10 @@
         "volume": "",
         "issue": "",
         "pages": "",
-        "month": "",
+        "month": "January",
         "location": "Orlando, FL",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/6.2025-0756",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -736,7 +736,7 @@
             "spacecraft inspection",
             "unmanned aerial vehicles"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Dunlap_2025, title={Demonstrating Reinforcement Learning and Run Time Assurance for Spacecraft Inspection Using Unmanned Aerial Vehicles}, url={http://dx.doi.org/10.2514/6.2025-0756}, DOI={10.2514/6.2025-0756}, booktitle={AIAA SCITECH 2025 Forum}, publisher={American Institute of Aeronautics and Astronautics}, author={Dunlap, Kyle and Hamilton, Nathaniel P. and Lippay, Zachary and Shubert, Matthew and Phillips, Sean and Hobbs, Kerianne L.}, year={2025}, month=Jan }"
     },
     {
         "id": "conf-acc-2024-damping-control",
@@ -750,11 +750,11 @@
         "venue": "American Control Conference",
         "volume": "",
         "issue": "",
-        "pages": "",
-        "month": "",
+        "pages": "4669\u20134674",
+        "month": "July",
         "location": "Toronto, CAN",
         "pdf": "",
-        "doi": "",
+        "doi": "10.23919/acc60939.2024.10644434",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -763,7 +763,7 @@
             "power systems",
             "damping control"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Copp_2024, title={Robust Hybrid Wide-Area Damping Control for Power Systems with Communication Errors}, url={http://dx.doi.org/10.23919/acc60939.2024.10644434}, DOI={10.23919/acc60939.2024.10644434}, booktitle={2024 American Control Conference (ACC)}, publisher={IEEE}, author={Copp, David A. and Phillips, Sean A.}, year={2024}, month=July, pages={4669\u20134674} }"
     },
     {
         "id": "conf-acc-2024-reachability-switching",
@@ -778,11 +778,11 @@
         "venue": "American Control Conference",
         "volume": "",
         "issue": "",
-        "pages": "",
-        "month": "",
+        "pages": "2298\u20132303",
+        "month": "July",
         "location": "Toronto, CAN",
         "pdf": "",
-        "doi": "",
+        "doi": "10.23919/acc60939.2024.10644961",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -791,7 +791,7 @@
             "satellite guidance",
             "switching control"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Miller_2024, title={Guaranteed Safe Satellite Guidance and Navigation Using Reachability Based Switching Controllers}, url={http://dx.doi.org/10.23919/acc60939.2024.10644961}, DOI={10.23919/acc60939.2024.10644961}, booktitle={2024 American Control Conference (ACC)}, publisher={IEEE}, author={Miller, Kristina and Phillips, Sean and Mitra, Sayan}, year={2024}, month=July, pages={2298\u20132303} }"
     },
     {
         "id": "conf-acc-2024-omniscience",
@@ -806,11 +806,11 @@
         "venue": "American Control Conference",
         "volume": "",
         "issue": "",
-        "pages": "",
-        "month": "",
+        "pages": "3454\u20133459",
+        "month": "July",
         "location": "Toronto, CAN",
         "pdf": "",
-        "doi": "",
+        "doi": "10.23919/acc60939.2024.10644332",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -819,7 +819,7 @@
             "observability",
             "state omniscience"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Hays_2024, title={A Necessary and Sufficient Condition for State Omniscience of Linear Time-Invariant Distributed Estimators}, url={http://dx.doi.org/10.23919/acc60939.2024.10644332}, DOI={10.23919/acc60939.2024.10644332}, booktitle={2024 American Control Conference (ACC)}, publisher={IEEE}, author={Hays, Christopher W. and Phillips, Sean and Henderson, Troy}, year={2024}, month=July, pages={3454\u20133459} }"
     },
     {
         "id": "conf-acc-2024-transport-maps",
@@ -836,11 +836,11 @@
         "venue": "American Control Conference",
         "volume": "",
         "issue": "",
-        "pages": "",
-        "month": "",
+        "pages": "3062\u20133067",
+        "month": "July",
         "location": "Toronto, CAN",
         "pdf": "",
-        "doi": "",
+        "doi": "10.23919/acc60939.2024.10645057",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -849,7 +849,7 @@
             "transport maps",
             "distributed estimation"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Grange_2024, title={Distributed Nonlinear Filtering using Triangular Transport Maps}, url={http://dx.doi.org/10.23919/acc60939.2024.10645057}, DOI={10.23919/acc60939.2024.10645057}, booktitle={2024 American Control Conference (ACC)}, publisher={IEEE}, author={Grange, Daniel and Baptisa, Ricardo and Taghvaei, Amirhossein and Tannenbaum, Allen and Phillips, Sean}, year={2024}, month=July, pages={3062\u20133067} }"
     },
     {
         "id": "conf-aero-2024-tda-simulation",
@@ -867,11 +867,11 @@
         "venue": "IEEE Aerospace Conference",
         "volume": "",
         "issue": "",
-        "pages": "",
-        "month": "",
+        "pages": "1\u201310",
+        "month": "March",
         "location": "Big Sky, MT",
         "pdf": "",
-        "doi": "",
+        "doi": "10.1109/aero58975.2024.10521145",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -879,7 +879,7 @@
             "trusted autonomy",
             "distributed autonomy"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Murray_Krezan_2024, title={Simulation-Based Results of the Trusted Distributed Autonomy Demonstration Experiment}, url={http://dx.doi.org/10.1109/aero58975.2024.10521145}, DOI={10.1109/aero58975.2024.10521145}, booktitle={2024 IEEE Aerospace Conference}, publisher={IEEE}, author={Murray-Krezan, Jeremy and Hussein, Islam I. and Borowski, Holly and Baker, Josh and Elliott, Chad and Phillips, Sean A.}, year={2024}, month=Mar, pages={1\u201310} }"
     },
     {
         "id": "conf-gnc-2024-drl-stability-testbed",
@@ -989,10 +989,10 @@
         "volume": "",
         "issue": "",
         "pages": "",
-        "month": "",
+        "month": "January",
         "location": "Orlando, FL",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/6.2024-0990",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -1001,7 +1001,7 @@
             "simulation",
             "satellite autonomy"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Stephenson_2024, title={Using Enhanced Simulation Environments to Accelerate Reinforcement Learning for Long-Duration Satellite Autonomy}, url={http://dx.doi.org/10.2514/6.2024-0990}, DOI={10.2514/6.2024-0990}, booktitle={AIAA SCITECH 2024 Forum}, publisher={American Institute of Aeronautics and Astronautics}, author={Stephenson, Mark and Mantovani, Lorenzzo and Phillips, Sean and Schaub, Hanspeter}, year={2024}, month=Jan }"
     },
     {
         "id": "conf-scitech-2024-passive-inspection-coverage",
@@ -1018,10 +1018,10 @@
         "volume": "",
         "issue": "",
         "pages": "",
-        "month": "",
+        "month": "January",
         "location": "Orlando, FL",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/6.2024-2882",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -1030,7 +1030,7 @@
             "coverage control",
             "monte carlo analysis"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Cutlip_2024, title={Multi-Agent Passive Inspection Coverage of an Unknown Torque-Free Rigid Body Using Monte Carlo Analysis and Quaternion Measurements}, url={http://dx.doi.org/10.2514/6.2024-2882}, DOI={10.2514/6.2024-2882}, booktitle={AIAA SCITECH 2024 Forum}, publisher={American Institute of Aeronautics and Astronautics}, author={Cutlip, Steven C. and Aurand, Joshua and Lang, Kendra and Phillips, Sean}, year={2024}, month=Jan }"
     },
     {
         "id": "conf-scitech-2024-cma-rhino",
@@ -1047,10 +1047,10 @@
         "volume": "",
         "issue": "",
         "pages": "",
-        "month": "",
+        "month": "January",
         "location": "Orlando, FL",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/6.2024-2416",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -1058,7 +1058,7 @@
             "collaborative autonomy",
             "networked operations"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Park_2024, title={Extended Abstract for Collaborative Mission Autonomy for Resilient Highly Integrated Networked Operations (CMA-RHINO)}, url={http://dx.doi.org/10.2514/6.2024-2416}, DOI={10.2514/6.2024-2416}, booktitle={AIAA SCITECH 2024 Forum}, publisher={American Institute of Aeronautics and Astronautics}, author={Park, Michael J. and Markovic, Dylan and Mesbahi, Mehran and Phillips, Sean}, year={2024}, month=Jan }"
     },
     {
         "id": "conf-scitech-2024-uav-emulation",
@@ -1076,10 +1076,10 @@
         "volume": "",
         "issue": "",
         "pages": "",
-        "month": "",
+        "month": "January",
         "location": "Orlando, FL",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/6.2024-1207",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -1088,7 +1088,7 @@
             "terrestrial testing",
             "unmanned aerial vehicles"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Phillips_2024, title={Emulation of Close-Proximity Spacecraft Dynamics in Terrestrial Environments Using Unmanned Aerial Vehicles}, url={http://dx.doi.org/10.2514/6.2024-1207}, DOI={10.2514/6.2024-1207}, booktitle={AIAA SCITECH 2024 Forum}, publisher={American Institute of Aeronautics and Astronautics}, author={Phillips, Sean and Lippay, Zachary and Baker, Dan and Soderlund, Alexander A. and Shubert, Matt}, year={2024}, month=Jan }"
     },
     {
         "id": "conf-scitech-2024-omnidirectional-uav",
@@ -1106,10 +1106,10 @@
         "volume": "",
         "issue": "",
         "pages": "",
-        "month": "",
+        "month": "January",
         "location": "Orlando, FL",
         "pdf": "",
-        "doi": "",
+        "doi": "10.2514/6.2024-0508",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -1117,7 +1117,7 @@
             "unmanned aerial vehicles",
             "control design"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{McCarthy_2024, title={Control for an Omnidirectional Multi-rotor UAV for Space Applications}, url={http://dx.doi.org/10.2514/6.2024-0508}, DOI={10.2514/6.2024-0508}, booktitle={AIAA SCITECH 2024 Forum}, publisher={American Institute of Aeronautics and Astronautics}, author={McCarthy, Riley M. and Thomas, Tristan and Danielson, Claus and Phillips, Sean and Fierro, Rafael}, year={2024}, month=Jan }"
     },
     {
         "id": "conf-plans-2023-consensus-pose",
@@ -1134,10 +1134,10 @@
         "volume": "",
         "issue": "",
         "pages": "1322-1329",
-        "month": "",
+        "month": "April",
         "location": "Monterey, CA",
         "pdf": "",
-        "doi": "",
+        "doi": "10.1109/plans53410.2023.10140083",
         "arxiv": "",
         "citation_count": null,
         "abstract": "",
@@ -1146,7 +1146,7 @@
             "consensus",
             "satellites"
         ],
-        "bibtex": ""
+        "bibtex": "@inproceedings{Grange_2023, title={Consensus on Region-Based Pose Estimation for Satellites}, url={http://dx.doi.org/10.1109/plans53410.2023.10140083}, DOI={10.1109/plans53410.2023.10140083}, booktitle={2023 IEEE/ION Position, Location and Navigation Symposium (PLANS)}, publisher={IEEE}, author={Grange, Daniel and Sandhu, Romeil and Soderlund, Alexander A. and Phillips, Sean}, year={2023}, month=Apr, pages={1322\u20131329} }"
     },
     {
         "id": "conf-aas-2022-sliding-mode-charlotte",
@@ -1342,9 +1342,9 @@
             "D. Ayres",
             "R. Lim"
         ],
-        "bibtex": "@misc{hobbs2025stars,\n  author    = {Kerianne L. Hobbs and Sean Phillips and Michelle Simon and Joseph B. Lyons and Jared Culbertson and Hamilton Scott Clouse and Nathaniel Hamilton and Kyle Dunlap and Zachary S. Lippay and Joshua Aurand and Zachary I. Bell and Taleri Hammack and Dorothy Ayres and Rizza Lim},\n  title     = {The Safe Trusted Autonomy for Responsible Space Program},\n  year      = {2025},\n  eprint    = {2501.05984},\n  archivePrefix = {arXiv}\n}",
+        "bibtex": "@inproceedings{Hobbs_2025, title={The Safe Trusted Autonomy for Responsible Space Program}, url={http://dx.doi.org/10.1109/aero63441.2025.11068530}, DOI={10.1109/aero63441.2025.11068530}, booktitle={2025 IEEE Aerospace Conference}, publisher={IEEE}, author={Hobbs, Kerianne L. and Phillips, Sean and Simon, Michelle and Lyons, Joseph B. and Culbertson, Jared and Clouse, Hamilton Scott and Hamilton, Nathaniel and Dunlap, Kyle and Lippay, Zachary S. and Aurand, Joshua and Bell, Zachary I. and Hammack, Taleri and Ayres, Dorothy and Lim, Rizza}, year={2025}, month=Mar, pages={1\u201317} }",
         "citation_count": null,
-        "doi": "",
+        "doi": "10.1109/aero63441.2025.11068530",
         "id": "arxiv-2025-stars-program",
         "keywords": [
             "trusted autonomy",
@@ -1354,9 +1354,12 @@
         ],
         "pdf": "",
         "title": "The Safe Trusted Autonomy for Responsible Space Program",
-        "type": "preprint",
-        "venue": "arXiv preprint",
-        "year": 2025
+        "type": "conference",
+        "venue": "IEEE Aerospace Conference",
+        "year": 2025,
+        "location": "Big Sky, MT",
+        "month": "March",
+        "pages": "1\u201317"
     },
     {
         "abstract": "",
@@ -1450,9 +1453,9 @@
             "A. Maghareh",
             "S. Phillips"
         ],
-        "bibtex": "@misc{lei2025stability,\n  author    = {Henry Lei and Zachary S. Lippay and Anonto Zaman and Joshua Aurand and Amin Maghareh and Sean Phillips},\n  title     = {Stability Analysis of Deep Reinforcement Learning for Multi-Agent Inspection in a Terrestrial Testbed},\n  year      = {2025},\n  eprint    = {2503.00056},\n  archivePrefix = {arXiv}\n}",
+        "bibtex": "@inproceedings{Lei_2025, title={Stability Analysis of Deep Reinforcement Learning for Multi-Agent Inspection in a Terrestrial Testbed}, url={http://dx.doi.org/10.2514/6.2025-1146}, DOI={10.2514/6.2025-1146}, booktitle={AIAA SCITECH 2025 Forum}, publisher={American Institute of Aeronautics and Astronautics}, author={Lei, Henry and Lippay, Zachary and Zaman, Anonto and Aurand, Joshua and Maghareh, Amin and Phillips, Sean}, year={2025}, month=Jan }",
         "citation_count": null,
-        "doi": "",
+        "doi": "10.2514/6.2025-1146",
         "id": "arxiv-2025-drl-stability-testbed",
         "keywords": [
             "deep reinforcement learning",
@@ -1465,29 +1468,8 @@
         "type": "conference",
         "venue": "AIAA SciTech Forum",
         "year": 2025,
-        "location": "Orlando, FL"
-    },
-    {
-        "abstract": "",
-        "arxiv": "https://arxiv.org/abs/2503.01049",
-        "authors": [
-            "D. Baker",
-            "S. Phillips"
-        ],
-        "bibtex": "@misc{baker2025autonomylevels,\n  author    = {Daniel Baker and Sean Phillips},\n  title     = {Spacecraft Autonomy Levels},\n  year      = {2025},\n  eprint    = {2503.01049},\n  archivePrefix = {arXiv}\n}",
-        "citation_count": null,
-        "doi": "",
-        "id": "arxiv-2025-spacecraft-autonomy-levels",
-        "keywords": [
-            "spacecraft autonomy",
-            "autonomy levels",
-            "space systems"
-        ],
-        "pdf": "",
-        "title": "Spacecraft Autonomy Levels",
-        "type": "preprint",
-        "venue": "arXiv preprint",
-        "year": 2025
+        "location": "Orlando, FL",
+        "month": "January"
     },
     {
         "abstract": "",
